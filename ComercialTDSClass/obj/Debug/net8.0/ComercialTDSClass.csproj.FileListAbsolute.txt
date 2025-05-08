@@ -1,0 +1,12 @@
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\bin\Debug\net8.0\ComercialTDSClass.deps.json
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\bin\Debug\net8.0\ComercialTDSClass.dll
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\bin\Debug\net8.0\ComercialTDSClass.pdb
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.csproj.AssemblyReference.cache
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.AssemblyInfoInputs.cache
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.AssemblyInfo.cs
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.csproj.CoreCompileInputs.cache
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.dll
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\refint\ComercialTDSClass.dll
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.pdb
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ref\ComercialTDSClass.dll

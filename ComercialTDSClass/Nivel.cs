@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
+using System.Reflection.Metadata.Ecma335;
 
 namespace ComercialTDSClass
 {
@@ -43,13 +44,55 @@ namespace ComercialTDSClass
             cmd.Parameters.AddWithValue("spnome",Nome);
             cmd.Parameters.AddWithValue("spsigla", Sigla);
             Id = Convert.ToInt32(cmd.ExecuteScalar());
-        }
-        public void Atualizar()
-        {
-            
-           
-        }
 
+            cmd.Connection.Close();
+        }
+        public static Nivel ObterPorId(int id)
+        {
+            Nivel nivel = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = $"select *from niveis where id = {id}";
+            var dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                nivel.Id = dr.GetInt32(0);
+                nivel.Nome = dr.GetString(1);
+                nivel.Sigla = dr.GetString(2);
+                //nivel = new Nivel(dr.GetInt32(0), dr.GetString(1), dr.GetString(2));
+
+            }
+            dr.Close();
+            cmd.Connection.Close();
+            return nivel;
+        }
+        public static List<Nivel> ObterLista()
+        {
+            List<Nivel> niveis = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select *from niveis order by nome;";
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                niveis.Add(new Nivel
+                    (dr.GetInt32(0),
+                    dr.GetString(1),
+                    dr.GetString(2)
+                    
+                    )
+                );
+               
+            }
+            return niveis;
+
+
+
+
+
+        }
 
     }
 }
+
+
+        
+

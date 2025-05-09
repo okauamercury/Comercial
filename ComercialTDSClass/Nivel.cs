@@ -34,7 +34,9 @@ namespace ComercialTDSClass
             Sigla = sigla;
         }
         // inserir, atualizar, listar, ObterPorId(id)
-
+        /// <summary>
+        /// Método para inserir um novo nível no banco de dados.
+        /// </summary>
         public void Inserir()
         {
             var cmd = Banco.Abrir();
@@ -64,6 +66,7 @@ namespace ComercialTDSClass
             dr.Close();
             cmd.Connection.Close();
             return nivel;
+            cmd.Connection.Close();
         }
         public static List<Nivel> ObterLista()
         {
@@ -83,15 +86,45 @@ namespace ComercialTDSClass
                
             }
             return niveis;
-
+            cmd.Connection.Close();
 
 
 
 
         }
+        public bool Atualizar()
+        {
+           /// 
+           ///como esse metodo não é estatico, precisamos considerar que as propriedades
+           ///já possuem valores atribuidos
+           ///
+          
+            bool Atualizado = false;
+            if (Id < 1) return Atualizado;
+            var cmd = Banco.Abrir();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "sp_nivel_update";
+            cmd.Parameters.AddWithValue("spnome", Nome);
+            cmd.Parameters.AddWithValue("spsigla", Sigla);
 
+            if (cmd.ExecuteNonQuery() > 0)
+            {
+               
+               Atualizado = true;
+                
+            }
+            cmd.Connection.Close();
+            return Atualizado;
+            
+            
+        }
     }
 }
+
+          
+
+            
+            
 
 
         

@@ -21,7 +21,7 @@ namespace ComercialTDSClass
         public bool Ativo { get; set; }
 
 
-         
+        
         //gerando os contrutores
         public Usuario() 
         {
@@ -176,6 +176,12 @@ namespace ComercialTDSClass
             return usuario;
 
         }
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="email"></param>
+       /// <param name="senha"></param>
+       /// <returns></returns>
         public static bool AlterarSenha(string email, string senha)
         {
             var cmd = Banco.Abrir();
@@ -183,10 +189,7 @@ namespace ComercialTDSClass
             return cmd.ExecuteNonQuery() > 0 ? true : false;
 
         }
-        /// <summary>
-        /// CLASSE USUARIO FINALIZADA
-        /// </summary>
-
+       
 
 
 

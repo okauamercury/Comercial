@@ -15,12 +15,12 @@ namespace ComercialTDSClass
      public string? Cpf { get; set; }
      public string? Telefone { get; set; }
      public string? Email { get; set; }
-     public DateOnly Data_Nasci { get; set; }
+     public DateTime Data_Nasci { get; set; }
      public Timestamp? Data_cadastro { get; set; }
      public bool? Ativo { get; set; }
         
         public Cliente() { }
-        public Cliente(List<Endereco>? enderecos, int id, string? nome, string? cpf, string? telefone, string? email, DateOnly data_Nasci, Timestamp? data_cadastro, bool? ativo)
+        public Cliente(List<Endereco>? enderecos, int id, string? nome, string? cpf, string? telefone, string? email, DateTime data_Nasci, Timestamp? data_cadastro, bool? ativo)
         {
             Enderecos = enderecos;
             Id = id;
@@ -32,7 +32,7 @@ namespace ComercialTDSClass
             Data_cadastro = data_cadastro;
             Ativo = ativo;
         }
-        public Cliente(List<Endereco>? enderecos, string? nome, string? cpf, string? telefone, string? email, DateOnly data_Nasci, Timestamp? data_cadastro, bool? ativo)
+        public Cliente(List<Endereco>? enderecos, string? nome, string? cpf, string? telefone, string? email, DateTime data_Nasci, Timestamp? data_cadastro, bool? ativo)
         {
            
             Enderecos = enderecos;

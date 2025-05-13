@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComercialTDSClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +20,15 @@ namespace ComercialTDSDesk
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (btnCancelar.Text == "&Voltar")
+                Close();
+            else
+                Application.Exit();
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            Program.UsuarioLogado = Usuario.EfetuarLogin(txtEmail.Text, txtSenha.Text);      
             Close();
         }
     }

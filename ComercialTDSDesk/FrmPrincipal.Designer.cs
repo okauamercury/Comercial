@@ -33,8 +33,7 @@
             statusStrip1 = new StatusStrip();
             tsslUsuarioLogado = new ToolStripStatusLabel();
             toolStripDropDownButton1 = new ToolStripDropDownButton();
-            perfilToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
+            trocarDeUsuarioToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,24 +63,19 @@
             // toolStripDropDownButton1
             // 
             toolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { perfilToolStripMenuItem, sairToolStripMenuItem });
+            toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { trocarDeUsuarioToolStripMenuItem });
             toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
             toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             toolStripDropDownButton1.Size = new Size(29, 20);
             toolStripDropDownButton1.Text = "toolStripDropDownButton1";
             // 
-            // perfilToolStripMenuItem
+            // trocarDeUsuarioToolStripMenuItem
             // 
-            perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            perfilToolStripMenuItem.Size = new Size(180, 22);
-            perfilToolStripMenuItem.Text = "Perfil";
-            // 
-            // sairToolStripMenuItem
-            // 
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(180, 22);
-            sairToolStripMenuItem.Text = "Sair";
+            trocarDeUsuarioToolStripMenuItem.Name = "trocarDeUsuarioToolStripMenuItem";
+            trocarDeUsuarioToolStripMenuItem.Size = new Size(180, 22);
+            trocarDeUsuarioToolStripMenuItem.Text = "Trocar de Usuario";
+            trocarDeUsuarioToolStripMenuItem.Click += trocarDeUsuarioToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -108,7 +102,6 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel tsslUsuarioLogado;
         private ToolStripDropDownButton toolStripDropDownButton1;
-        private ToolStripMenuItem perfilToolStripMenuItem;
-        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem trocarDeUsuarioToolStripMenuItem;
     }
 }

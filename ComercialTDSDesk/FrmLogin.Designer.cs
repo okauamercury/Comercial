@@ -131,7 +131,7 @@
         #endregion
 
         private Button btnEntrar;
-        private Button btnCancelar;
+        public Button btnCancelar;
         private TextBox txtEmail;
         private TextBox txtSenha;
         private CheckBox chkExibeSenha;

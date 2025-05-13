@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComercialTDSClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,25 @@ namespace ComercialTDSDesk
             FrmLogin frmlogin = new();
             Hide();
             frmlogin.ShowDialog();
+            if (Program.UsuarioLogado.Id > 0)
+            {
+                tsslUsuarioLogado.Text = Program.UsuarioLogado.Nome + " - " + Program.UsuarioLogado.Nivel.Nome;
+            }
             Show();
+        }
+
+        private void statusStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void trocarDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmlogin = new();
+            frmlogin.btnCancelar.Text = "&Voltar";
+            frmlogin.ShowDialog();
+            tsslUsuarioLogado.Text = Program.UsuarioLogado.Nome + " - " + Program.UsuarioLogado.Nivel.Nome;
+
         }
     }
 }

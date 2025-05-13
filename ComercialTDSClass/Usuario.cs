@@ -158,18 +158,18 @@ namespace ComercialTDSClass
         {
             Usuario usuario = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select * from usuarios where emaiil = '{email}' and senha = md5('{senha}')";
+            cmd.CommandText = $"select * from usuarios where email = '{email}' and senha = md5('{senha}')";
             var dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                usuario = new();
-                dr.GetInt32(0);
-                dr.GetString(1);
-                dr.GetString(2);
-                dr.GetString(3);
-                Nivel.ObterPorId(dr.GetInt32(4));
-                dr.GetBoolean(5);
-
+                usuario = new(
+                dr.GetInt32(0),
+                dr.GetString(1),
+                dr.GetString(2),
+                dr.GetString(3),
+                Nivel.ObterPorId(dr.GetInt32(4)),
+                dr.GetBoolean(5)
+                );
             }
             dr.Close();
             cmd.Connection.Close();

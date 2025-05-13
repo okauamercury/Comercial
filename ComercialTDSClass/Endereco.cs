@@ -54,7 +54,7 @@ namespace ComercialTDSClass
         // metodos construtores
 
 
-        public static List<Endereco> ObterListaPorClienteId()
+        public static List<Endereco> ObterListaPorClienteId(int id)
         {
             List<Endereco> enderecos = new();
             var cmd = Banco.Abrir();
@@ -93,7 +93,7 @@ namespace ComercialTDSClass
             cmd.Parameters.AddWithValue("spcidade", Cidade);
             cmd.Parameters.AddWithValue("spuf", Uf);
             cmd.Parameters.AddWithValue("sptipo", Tipo);
-            Id = Convert.ToInt32(cmd.ExecuteScalar);
+            Id = Convert.ToInt32(cmd.ExecuteScalar());
 
             cmd.Connection.Close();
         }
@@ -140,13 +140,15 @@ namespace ComercialTDSClass
             return enderecos;
 
         }
-        public static Deletar()
+        public bool Excluir()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "sp_endereco_delete";
-
-
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("spid", Id);
+            return cmd.ExecuteNonQuery() > 0 ? true : false;
         }
+        
+        
         
         
 

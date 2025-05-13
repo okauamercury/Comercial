@@ -10,3 +10,4 @@ C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\refint\ComercialTDSClass.dll
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.pdb
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ref\ComercialTDSClass.dll
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSClass\obj\Debug\net8.0\ComercialTDSClass.sourcelink.json

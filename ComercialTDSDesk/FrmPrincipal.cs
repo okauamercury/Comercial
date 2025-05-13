@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace ComercialTDSDesk
 {
-    public partial class FrmPrincipal: Form
+    public partial class FrmPrincipal : Form
     {
         public FrmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            FrmLogin frmlogin = new();
+            Hide();
+            frmlogin.ShowDialog();
+            Show();
         }
     }
 }

@@ -28,8 +28,25 @@ namespace ComercialTDSDesk
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Program.UsuarioLogado = Usuario.EfetuarLogin(txtEmail.Text, txtSenha.Text);      
-            Close();
+            Program.UsuarioLogado = Usuario.EfetuarLogin(txtEmail.Text, txtSenha.Text);
+
+            if (Program.UsuarioLogado.Id > 0)
+            {
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Email e/ou Senha invalidos ou \n " +
+                    "usuario não cadastrado!");
+                txtEmail.Focus();
+                txtEmail.SelectAll();
+            }
         }
+
+       
+
+
+
+        
     }
 }

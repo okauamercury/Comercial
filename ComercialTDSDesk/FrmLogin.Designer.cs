@@ -64,6 +64,7 @@
             txtEmail.PlaceholderText = "Email";
             txtEmail.Size = new Size(219, 23);
             txtEmail.TabIndex = 2;
+            txtEmail.Text = "kaua@gmail.com";
             // 
             // txtSenha
             // 
@@ -72,6 +73,7 @@
             txtSenha.PlaceholderText = "Senha";
             txtSenha.Size = new Size(219, 23);
             txtSenha.TabIndex = 3;
+            txtSenha.Text = "ACdb123#$";
             txtSenha.UseSystemPasswordChar = true;
             // 
             // chkExibeSenha
@@ -97,11 +99,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.Red;
-            label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(271, -1);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Millimeter);
+            label2.Location = new Point(98, 9);
             label2.Name = "label2";
-            label2.Size = new Size(198, 25);
+            label2.Size = new Size(552, 71);
             label2.TabIndex = 6;
             label2.Text = "Comercial TDS System";
             // 

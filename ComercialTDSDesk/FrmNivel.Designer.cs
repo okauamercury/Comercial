@@ -32,16 +32,15 @@
             btnGravar = new Button();
             btnEditar = new Button();
             btnCancelar = new Button();
-            txtId = new TextBox();
             txtSigla = new TextBox();
             txtNome = new TextBox();
             dgvNiveis = new DataGridView();
             clnId = new DataGridViewTextBoxColumn();
             clnNome = new DataGridViewTextBoxColumn();
             clnSigla = new DataGridViewTextBoxColumn();
-            label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            txtId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvNiveis).BeginInit();
             SuspendLayout();
             // 
@@ -60,6 +59,7 @@
             // btnEditar
             // 
             btnEditar.BackColor = Color.Black;
+            btnEditar.Enabled = false;
             btnEditar.ForeColor = SystemColors.Control;
             btnEditar.Location = new Point(254, 281);
             btnEditar.Name = "btnEditar";
@@ -67,7 +67,7 @@
             btnEditar.TabIndex = 1;
             btnEditar.Text = "&Editar";
             btnEditar.UseVisualStyleBackColor = false;
-            btnEditar.Click += button2_Click;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnCancelar
             // 
@@ -79,13 +79,6 @@
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // txtId
-            // 
-            txtId.Location = new Point(101, 128);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(100, 23);
-            txtId.TabIndex = 3;
             // 
             // txtSigla
             // 
@@ -122,6 +115,8 @@
             dgvNiveis.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvNiveis.Size = new Size(280, 180);
             dgvNiveis.TabIndex = 6;
+            dgvNiveis.CellContentDoubleClick += dgvNiveis_CellContentDoubleClick;
+            dgvNiveis.CellDoubleClick += dgvNiveis_CellDoubleClick;
             // 
             // clnId
             // 
@@ -149,16 +144,6 @@
             clnSigla.ReadOnly = true;
             clnSigla.Resizable = DataGridViewTriState.False;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(78, 136);
-            label1.Name = "label1";
-            label1.Size = new Size(17, 15);
-            label1.TabIndex = 7;
-            label1.Text = "Id";
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -179,6 +164,13 @@
             label3.TabIndex = 9;
             label3.Text = "SIgla";
             // 
+            // txtId
+            // 
+            txtId.Location = new Point(101, 128);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(100, 23);
+            txtId.TabIndex = 3;
+            // 
             // FrmNivel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -186,7 +178,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(dgvNiveis);
             Controls.Add(txtNome);
             Controls.Add(txtSigla);
@@ -207,15 +198,14 @@
         private Button btnGravar;
         private Button btnEditar;
         private Button btnCancelar;
-        private TextBox txtId;
         private TextBox txtSigla;
         private TextBox txtNome;
         private DataGridView dgvNiveis;
-        private Label label1;
         private Label label2;
         private Label label3;
         private DataGridViewTextBoxColumn clnId;
         private DataGridViewTextBoxColumn clnNome;
         private DataGridViewTextBoxColumn clnSigla;
+        private TextBox txtId;
     }
 }

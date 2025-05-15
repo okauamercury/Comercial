@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             btnGravar = new Button();
             btnEditar = new Button();
             btnCancelar = new Button();
@@ -46,50 +47,56 @@
             // 
             // btnGravar
             // 
+            btnGravar.BackColor = Color.Black;
+            btnGravar.ForeColor = SystemColors.ControlLightLight;
             btnGravar.Location = new Point(101, 281);
             btnGravar.Name = "btnGravar";
             btnGravar.Size = new Size(128, 31);
             btnGravar.TabIndex = 0;
             btnGravar.Text = "&Gravar";
-            btnGravar.UseVisualStyleBackColor = true;
+            btnGravar.UseVisualStyleBackColor = false;
             btnGravar.Click += btnGravar_Click;
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.Black;
+            btnEditar.ForeColor = SystemColors.Control;
             btnEditar.Location = new Point(254, 281);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(128, 31);
             btnEditar.TabIndex = 1;
             btnEditar.Text = "&Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += button2_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = SystemColors.ActiveCaptionText;
+            btnCancelar.ForeColor = SystemColors.Control;
             btnCancelar.Location = new Point(402, 281);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(128, 31);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             // 
             // txtId
             // 
-            txtId.Location = new Point(101, 157);
+            txtId.Location = new Point(101, 128);
             txtId.Name = "txtId";
             txtId.Size = new Size(100, 23);
             txtId.TabIndex = 3;
             // 
             // txtSigla
             // 
-            txtSigla.Location = new Point(101, 226);
+            txtSigla.Location = new Point(103, 221);
             txtSigla.Name = "txtSigla";
             txtSigla.Size = new Size(100, 23);
             txtSigla.TabIndex = 4;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(101, 186);
+            txtNome.Location = new Point(103, 172);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(281, 23);
             txtNome.TabIndex = 5;
@@ -100,6 +107,14 @@
             dgvNiveis.AllowUserToDeleteRows = false;
             dgvNiveis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvNiveis.Columns.AddRange(new DataGridViewColumn[] { clnId, clnNome, clnSigla });
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.InfoText;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dgvNiveis.DefaultCellStyle = dataGridViewCellStyle1;
             dgvNiveis.Location = new Point(402, 95);
             dgvNiveis.Name = "dgvNiveis";
             dgvNiveis.ReadOnly = true;
@@ -137,7 +152,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(72, 160);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(78, 136);
             label1.Name = "label1";
             label1.Size = new Size(17, 15);
             label1.TabIndex = 7;
@@ -146,7 +162,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(57, 194);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(57, 180);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
             label2.TabIndex = 8;
@@ -155,7 +172,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(57, 229);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(63, 224);
             label3.Name = "label3";
             label3.Size = new Size(32, 15);
             label3.TabIndex = 9;

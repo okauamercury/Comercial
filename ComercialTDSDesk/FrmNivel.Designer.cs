@@ -79,6 +79,7 @@
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtSigla
             // 

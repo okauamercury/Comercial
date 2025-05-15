@@ -65,5 +65,12 @@ namespace ComercialTDSDesk
             frmNivel.MdiParent = this;
             frmNivel.Show();
         }
+
+        private void incluirToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            FrmUsuario frmusuario = new();
+            frmusuario.MdiParent = this;
+            frmusuario.Show();
+        }
     }
 }

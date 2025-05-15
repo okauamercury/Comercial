@@ -39,10 +39,11 @@ namespace ComercialTDSDesk
                         MessageBox.Show($"Nível cadastrado com sucesso");
                         FrmNivel_Load(sender, e);
                         btnGravar.Enabled = false;
-                        
+
                     }
 
-                }LimparControles();
+                }
+                LimparControles();
             }
             else
             {
@@ -53,7 +54,7 @@ namespace ComercialTDSDesk
                     MessageBox.Show("Nivel atualizado com sucesso");
                     btnGravar.Enabled = false;
 
-                
+
                 }
 
             }
@@ -63,7 +64,7 @@ namespace ComercialTDSDesk
             txtId.Clear();
             txtNome.Clear();
             txtSigla.Clear();
-            
+
         }
         private void CarregaGrid()
         {
@@ -85,13 +86,13 @@ namespace ComercialTDSDesk
         }
         private void dgvNiveis_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
 
 
         private void dgvNiveis_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        { 
+        {
             // recuperando o Indice da linha do grid
             int linha = dgvNiveis.CurrentRow.Index;
             // recuperando o id do nivel na coluna, oculta, ID(0)
@@ -102,15 +103,20 @@ namespace ComercialTDSDesk
             txtId.Text = nivel.Id.ToString();
             txtNome.Text = nivel.Nome;
             txtSigla.Text = nivel.Sigla;
-            
+
             txtNome.ReadOnly = true;
             txtSigla.ReadOnly = true;
             btnEditar.Enabled = true;
             btnGravar.Enabled = false;
-            
-            
+
+
             //MessageBox.Show($"{nivel.Id} {nivel.Id}{nivel.Sigla}");
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

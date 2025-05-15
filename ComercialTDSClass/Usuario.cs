@@ -80,7 +80,7 @@ namespace ComercialTDSClass
             cmd.Parameters.AddWithValue("semail", Email);
             cmd.Parameters.AddWithValue("ssenha", Senha);
             cmd.Parameters.AddWithValue("snivel", Nivel.Id);
-            Id= Convert.ToInt32(cmd.ExecuteScalar);
+            Id= Convert.ToInt32(cmd.ExecuteScalar());
             cmd.Connection.Close();
 
         }

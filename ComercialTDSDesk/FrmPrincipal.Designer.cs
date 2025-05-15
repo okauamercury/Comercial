@@ -177,6 +177,7 @@
             incluirToolStripMenuItem5.Name = "incluirToolStripMenuItem5";
             incluirToolStripMenuItem5.Size = new Size(180, 22);
             incluirToolStripMenuItem5.Text = "&Incluir";
+            incluirToolStripMenuItem5.Click += incluirToolStripMenuItem5_Click;
             // 
             // listarToolStripMenuItem5
             // 

@@ -44,9 +44,9 @@ namespace ComercialTDSDesk
         private void btnGravar_Click_1(object sender, EventArgs e)
         {
             Usuario user = new(
-                "kaua rocha",
-                "kaua@gmail.com",
-                "ACdb123#$",
+                "João Ferreira",
+                "jferreira@gmail.com",
+                "1234",
                 Nivel.ObterPorId(Convert.ToInt32(cmbNivel.SelectedValue))
              );
             user.Inserir();

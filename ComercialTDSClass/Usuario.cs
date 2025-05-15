@@ -82,6 +82,7 @@ namespace ComercialTDSClass
             cmd.Parameters.AddWithValue("snivel", Nivel.Id);
             Id= Convert.ToInt32(cmd.ExecuteScalar());
             cmd.Connection.Close();
+            
 
         }
 

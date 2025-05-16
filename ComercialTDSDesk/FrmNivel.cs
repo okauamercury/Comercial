@@ -118,5 +118,10 @@ namespace ComercialTDSDesk
         {
             Close();
         }
+
+        private void dgvNiveis_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

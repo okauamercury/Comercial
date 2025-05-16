@@ -43,11 +43,12 @@ namespace ComercialTDSDesk
 
         private void btnGravar_Click_1(object sender, EventArgs e)
         {
-          //Usuario user = new();
+            Usuario usuario = new(txtNome.Text, txtEmail.Text, txtSenha.Text, Nivel.ObterPorId(Convert.ToInt32(cmbNivel.SelectedValue)));
+            usuario.Inserir();
+            txtNome.Clear();
+            txtEmail.Clear();
+            txtSenha.Clear();
 
-          //Nivel.ObterPorId(Convert.ToInt32(cmbNivel.SelectedValue));
-           
-          //user.Inserir();
         }
     }
 }

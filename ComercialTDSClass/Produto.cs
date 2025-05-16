@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComercialTDSClass
 {
-    class Produto
+    public class Produto
     {
 
     }

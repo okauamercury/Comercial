@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Xsl;
 using System.Data;
 using Microsoft.VisualBasic;
+using MySql.Data.MySqlClient;
 
 namespace ComercialTDSClass
 {
@@ -71,20 +72,22 @@ namespace ComercialTDSClass
         // criação dos metodos para classe
 
 
-        public void Inserir() 
+        public void Inserir()
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "sp_usuario_insert";
             cmd.Parameters.AddWithValue("spnome", Nome);
-            cmd.Parameters.AddWithValue("semail", Email);
-            cmd.Parameters.AddWithValue("ssenha", Senha);
-            cmd.Parameters.AddWithValue("snivel", Nivel.Id);
-            Id= Convert.ToInt32(cmd.ExecuteScalar());
-            cmd.Connection.Close();
-            
+            cmd.Parameters.AddWithValue("spemail", Email);
+            cmd.Parameters.AddWithValue("spsenha", Senha);
+            cmd.Parameters.AddWithValue("spnivel", Nivel.Id);
+            Id = Convert.ToInt32(cmd.ExecuteScalar());
 
+            cmd.Connection.Close();
         }
+
+            
+            
 
         public bool Atualizar()
         {

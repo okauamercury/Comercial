@@ -28,6 +28,20 @@ namespace ComercialTDSDesk
                 tsslUsuarioLogado.Text = Program.UsuarioLogado.Nome + " - " + Program.UsuarioLogado.Nivel.Nome;
             }
             Show();
+            // chamada do panel
+        }
+        private void AssiociaPanel(Form form)
+        {
+           
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.MaximizeBox = true;
+            form.AutoSize = true;
+            form.Size = panelCentral.Size;
+            panelCentral.Controls.Clear();
+            panelCentral.Controls.Add(form);
+            form.Show();
+           
         }
 
         private void statusStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -41,7 +55,7 @@ namespace ComercialTDSDesk
             frmlogin.btnCancelar.Text = "&Voltar";
             frmlogin.ShowDialog();
             tsslUsuarioLogado.Text = Program.UsuarioLogado.Nome + " - " + Program.UsuarioLogado.Nivel.Nome;
-
+            
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,21 +70,24 @@ namespace ComercialTDSDesk
 
         private void incluirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AssiociaPanel(new FrmUsuario());
         }
 
         private void niveisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmNivel frmNivel = new();
-            frmNivel.MdiParent = this;
-            frmNivel.Show();
+             FrmNivel frmNivel = new();
+             frmNivel.MdiParent = this;
+             frmNivel.Show();
+            AssiociaPanel(new FrmNivel());
         }
+
 
         private void incluirToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            FrmUsuario frmusuario = new();
-            frmusuario.MdiParent = this;
-            frmusuario.Show();
+           FrmUsuario frmusuario = new();
+           frmusuario.MdiParent = this;
+           frmusuario.Show();
+            AssiociaPanel(new FrmUsuario());
         }
     }
 }

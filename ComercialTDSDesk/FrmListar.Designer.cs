@@ -57,6 +57,7 @@
             btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtNome
             // 
@@ -130,6 +131,7 @@
             Controls.Add(btnBuscar);
             Name = "FrmListar";
             Text = "FrmListar";
+            Load += FrmListar_Load;
             ((System.ComponentModel.ISupportInitialize)dgvListar).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -38,8 +38,24 @@ namespace ComercialTDSDesk
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             var nivel = Nivel.ObterPorId(int.Parse(txtNome.Text));
-            txtNome.Text = Nivel.Nome
+            txtNome.Text = nivel.Nome;
+            cbmNivel.SelectedValue = nivel.Sigla;
+
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmListar_Load(object sender, EventArgs e)
+        {
+            var niveis = Nivel.ObterLista();
+            cbmNivel.DataSource = niveis;
+            cbmNivel.DisplayMember = "Nome";
+            cbmNivel.ValueMember = "Id";
+        }
+
     }
 }

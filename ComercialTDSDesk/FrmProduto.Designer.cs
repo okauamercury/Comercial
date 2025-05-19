@@ -36,7 +36,6 @@
             nudEstoqueMinimo = new NumericUpDown();
             nudClasseDesconto = new NumericUpDown();
             chkDescontinuado = new CheckBox();
-            picImagem = new PictureBox();
             btnCarregarImagem = new Button();
             btnSalvar = new Button();
             btnEditar = new Button();
@@ -48,6 +47,7 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            picImagem = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)nudValorUnit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudEstoqueMinimo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudClasseDesconto).BeginInit();
@@ -118,16 +118,6 @@
             chkDescontinuado.Size = new Size(150, 24);
             chkDescontinuado.TabIndex = 7;
             chkDescontinuado.Text = "Descontinuado";
-            // 
-            // picImagem
-            // 
-            picImagem.BorderStyle = BorderStyle.FixedSingle;
-            picImagem.Location = new Point(455, 12);
-            picImagem.Name = "picImagem";
-            picImagem.Size = new Size(150, 150);
-            picImagem.SizeMode = PictureBoxSizeMode.StretchImage;
-            picImagem.TabIndex = 8;
-            picImagem.TabStop = false;
             // 
             // btnCarregarImagem
             // 
@@ -224,6 +214,18 @@
             label7.TabIndex = 17;
             label7.Text = "Classe Desconto";
             // 
+            // picImagem
+            // 
+            picImagem.BackgroundImage = Properties.Resources.sem_imagem;
+            picImagem.BorderStyle = BorderStyle.FixedSingle;
+            picImagem.Image = Properties.Resources.sem_imagem;
+            picImagem.Location = new Point(455, 12);
+            picImagem.Name = "picImagem";
+            picImagem.Size = new Size(170, 156);
+            picImagem.SizeMode = PictureBoxSizeMode.StretchImage;
+            picImagem.TabIndex = 8;
+            picImagem.TabStop = false;
+            // 
             // FrmProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -277,9 +279,9 @@
         private NumericUpDown nudEstoqueMinimo;
         private NumericUpDown nudClasseDesconto;
         private CheckBox chkDescontinuado;
-        private PictureBox picImagem;
         private Button btnCarregarImagem;
         private Button btnSalvar;
+        private PictureBox picImagem;
     }
     #endregion
 }

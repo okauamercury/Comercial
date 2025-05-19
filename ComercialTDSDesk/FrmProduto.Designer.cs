@@ -48,6 +48,7 @@
             label6 = new Label();
             label7 = new Label();
             picImagem = new PictureBox();
+            ofdObterImagem = new OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)nudValorUnit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudEstoqueMinimo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudClasseDesconto).BeginInit();
@@ -126,6 +127,7 @@
             btnCarregarImagem.Size = new Size(150, 30);
             btnCarregarImagem.TabIndex = 9;
             btnCarregarImagem.Text = "Carregar Imagem";
+            btnCarregarImagem.Click += btnCarregarImagem_Click;
             // 
             // btnSalvar
             // 
@@ -134,6 +136,7 @@
             btnSalvar.Size = new Size(150, 35);
             btnSalvar.TabIndex = 10;
             btnSalvar.Text = "&Salvar";
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnEditar
             // 
@@ -226,6 +229,10 @@
             picImagem.TabIndex = 8;
             picImagem.TabStop = false;
             // 
+            // ofdObterImagem
+            // 
+            ofdObterImagem.FileName = "foto_produto";
+            // 
             // FrmProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -254,6 +261,7 @@
             Name = "FrmProduto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro de Produto";
+            Load += FrmProduto_Load;
             ((System.ComponentModel.ISupportInitialize)nudValorUnit).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudEstoqueMinimo).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudClasseDesconto).EndInit();
@@ -282,6 +290,7 @@
         private Button btnCarregarImagem;
         private Button btnSalvar;
         private PictureBox picImagem;
+        private OpenFileDialog ofdObterImagem;
     }
     #endregion
 }

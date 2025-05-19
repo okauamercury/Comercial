@@ -94,45 +94,46 @@
             // clienteToolStripMenuItem
             // 
             clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            clienteToolStripMenuItem.Size = new Size(145, 22);
+            clienteToolStripMenuItem.Size = new Size(180, 22);
             clienteToolStripMenuItem.Text = "&Clientes";
             // 
             // produtosToolStripMenuItem
             // 
             produtosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { incluirToolStripMenuItem6, listarToolStripMenuItem6, fornecedorToolStripMenuItem1, categoriaToolStripMenuItem1 });
             produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            produtosToolStripMenuItem.Size = new Size(145, 22);
+            produtosToolStripMenuItem.Size = new Size(180, 22);
             produtosToolStripMenuItem.Text = "&Produtos";
             // 
             // incluirToolStripMenuItem6
             // 
             incluirToolStripMenuItem6.Name = "incluirToolStripMenuItem6";
-            incluirToolStripMenuItem6.Size = new Size(134, 22);
+            incluirToolStripMenuItem6.Size = new Size(180, 22);
             incluirToolStripMenuItem6.Text = "&Incluir";
+            incluirToolStripMenuItem6.Click += incluirToolStripMenuItem6_Click;
             // 
             // listarToolStripMenuItem6
             // 
             listarToolStripMenuItem6.Name = "listarToolStripMenuItem6";
-            listarToolStripMenuItem6.Size = new Size(134, 22);
+            listarToolStripMenuItem6.Size = new Size(180, 22);
             listarToolStripMenuItem6.Text = "&Listar";
             // 
             // fornecedorToolStripMenuItem1
             // 
             fornecedorToolStripMenuItem1.Name = "fornecedorToolStripMenuItem1";
-            fornecedorToolStripMenuItem1.Size = new Size(134, 22);
+            fornecedorToolStripMenuItem1.Size = new Size(180, 22);
             fornecedorToolStripMenuItem1.Text = "&Fornecedor";
             // 
             // categoriaToolStripMenuItem1
             // 
             categoriaToolStripMenuItem1.Name = "categoriaToolStripMenuItem1";
-            categoriaToolStripMenuItem1.Size = new Size(134, 22);
+            categoriaToolStripMenuItem1.Size = new Size(180, 22);
             categoriaToolStripMenuItem1.Text = "&Categoria";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { incluirToolStripMenuItem3, listarToolStripMenuItem3 });
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(145, 22);
+            toolStripMenuItem2.Size = new Size(180, 22);
             toolStripMenuItem2.Text = "&Categorias";
             // 
             // incluirToolStripMenuItem3
@@ -151,7 +152,7 @@
             // 
             fornecedoresToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { incluirToolStripMenuItem4, listarToolStripMenuItem4 });
             fornecedoresToolStripMenuItem1.Name = "fornecedoresToolStripMenuItem1";
-            fornecedoresToolStripMenuItem1.Size = new Size(145, 22);
+            fornecedoresToolStripMenuItem1.Size = new Size(180, 22);
             fornecedoresToolStripMenuItem1.Text = "&Fornecedores";
             // 
             // incluirToolStripMenuItem4
@@ -170,26 +171,27 @@
             // 
             usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { incluirToolStripMenuItem5, listarToolStripMenuItem5, niveisToolStripMenuItem });
             usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            usuariosToolStripMenuItem.Size = new Size(145, 22);
+            usuariosToolStripMenuItem.Size = new Size(180, 22);
             usuariosToolStripMenuItem.Text = "&Usuarios";
             // 
             // incluirToolStripMenuItem5
             // 
             incluirToolStripMenuItem5.Name = "incluirToolStripMenuItem5";
-            incluirToolStripMenuItem5.Size = new Size(107, 22);
+            incluirToolStripMenuItem5.Size = new Size(180, 22);
             incluirToolStripMenuItem5.Text = "&Incluir";
             incluirToolStripMenuItem5.Click += incluirToolStripMenuItem5_Click;
             // 
             // listarToolStripMenuItem5
             // 
             listarToolStripMenuItem5.Name = "listarToolStripMenuItem5";
-            listarToolStripMenuItem5.Size = new Size(107, 22);
+            listarToolStripMenuItem5.Size = new Size(180, 22);
             listarToolStripMenuItem5.Text = "&Listar";
+            listarToolStripMenuItem5.Click += listarToolStripMenuItem5_Click;
             // 
             // niveisToolStripMenuItem
             // 
             niveisToolStripMenuItem.Name = "niveisToolStripMenuItem";
-            niveisToolStripMenuItem.Size = new Size(107, 22);
+            niveisToolStripMenuItem.Size = new Size(180, 22);
             niveisToolStripMenuItem.Text = "&Niveis";
             niveisToolStripMenuItem.Click += niveisToolStripMenuItem_Click;
             // 

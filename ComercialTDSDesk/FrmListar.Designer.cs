@@ -41,7 +41,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(280, 468);
+            btnBuscar.Location = new Point(282, 437);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(416, 468);
+            btnCancelar.Location = new Point(416, 437);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             cbmNivel.FormattingEnabled = true;
             cbmNivel.Items.AddRange(new object[] { "Master", "Administrador", "Estoquista", "Caixa" });
-            cbmNivel.Location = new Point(267, 407);
+            cbmNivel.Location = new Point(267, 378);
             cbmNivel.Name = "cbmNivel";
             cbmNivel.Size = new Size(248, 23);
             cbmNivel.TabIndex = 5;
@@ -82,6 +82,7 @@
             dgvListar.AllowUserToDeleteRows = false;
             dgvListar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListar.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnNivel });
+            dgvListar.GridColor = SystemColors.ScrollBar;
             dgvListar.Location = new Point(583, 306);
             dgvListar.Name = "dgvListar";
             dgvListar.ReadOnly = true;

@@ -51,10 +51,22 @@ namespace ComercialTDSDesk
 
         private void FrmListar_Load(object sender, EventArgs e)
         {
-            var niveis = Nivel.ObterLista();
-            cbmNivel.DataSource = niveis;
-            cbmNivel.DisplayMember = "Nome";
-            cbmNivel.ValueMember = "Id";
+            FrmListar frmListar = new();
+            var lista = Usuario.ObterLista();
+            int linha = 0;
+            dgvListar.Rows.Clear();
+
+            foreach (var nivel in lista)
+            {
+                dgvListar.Rows.Add();
+               
+                dgvListar.Rows[linha].Cells[1].Value = nivel.Nome;
+                dgvListar.Rows[linha].Cells[1].Value = nivel.Nivel;
+                
+                linha++;
+            }
+            
+
         }
 
     }

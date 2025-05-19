@@ -15,6 +15,7 @@ namespace ComercialTDSDesk
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new FrmPrincipal());
+            
         }
 
     }

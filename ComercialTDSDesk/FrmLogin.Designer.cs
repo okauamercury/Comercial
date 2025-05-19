@@ -106,6 +106,7 @@
             label2.Size = new Size(552, 71);
             label2.TabIndex = 6;
             label2.Text = "Comercial TDS System";
+            label2.Click += label2_Click;
             // 
             // FrmLogin
             // 

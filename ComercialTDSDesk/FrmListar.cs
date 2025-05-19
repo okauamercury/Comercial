@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,10 @@ namespace ComercialTDSDesk
 
         private void FrmListar_Load(object sender, EventArgs e)
         {
+            CarregarGrid();
+        }
+        private void CarregarGrid()
+        {
             FrmListar frmListar = new();
             var lista = Usuario.ObterLista();
             int linha = 0;
@@ -59,15 +64,18 @@ namespace ComercialTDSDesk
             foreach (var nivel in lista)
             {
                 dgvListar.Rows.Add();
-               
-                dgvListar.Rows[linha].Cells[1].Value = nivel.Nome;
+
+                dgvListar.Rows[linha].Cells[0].Value = nivel.Nome;
                 dgvListar.Rows[linha].Cells[1].Value = nivel.Nivel;
-                
+
                 linha++;
+
             }
             
-
         }
-
     }
 }
+            
+            
+
+

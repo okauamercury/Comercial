@@ -29,11 +29,10 @@ namespace ComercialTDSDesk
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            byte[] imgBytes;
             MemoryStream ms = new();
-            using (ms)
-            {
-                picImagem.Image.Save(ms, picImagem.Image.RawFormat);
-            }
+            picImagem.Image.Save(ms, picImagem.Image.RawFormat);
+            imgBytes = ms.ToArray();
 
             Produto produto = new(
                 txtCodBarras.Text,
@@ -43,7 +42,7 @@ namespace ComercialTDSDesk
                 Categoria.ObterPorId(Convert.ToInt32(cmbCategoria.SelectedValue)),
                 (double)nudEstoqueMinimo.Value,
                 (double)nudClasseDesconto.Value,
-                ms
+                imgBytes
             );
             produto.Inserir();
             if (produto.Id > 0)
@@ -55,6 +54,12 @@ namespace ComercialTDSDesk
             cmbCategoria.DataSource = Categoria.ObterLista();
             cmbCategoria.DisplayMember = "Nome";
             cmbCategoria.ValueMember = "Id";
+        }
+        
+
+        private void nudValorUnit_ValueChanged(object sender, EventArgs e)
+        {
+            nudValorUnit.Select(0, 9);
         }
     }
 }

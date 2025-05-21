@@ -20,7 +20,7 @@ namespace ComercialTDSClass
         public Categoria? Categoria { get; set; }
         public double? EstoqueMinimo { get; set; }
         public double? ClasseDesconto { get; set; }
-        public Stream Imagem { get; set; }
+        public Byte[] Imagem { get; set; }
         public DateTime? DataCad { get; set; }
         public bool Descontinuado { get; set; }
 
@@ -29,7 +29,7 @@ namespace ComercialTDSClass
         {
             Categoria = new();
         }
-        public Produto(int id, string? codBarras, string? descricao, double? valorUnit, string? unidadeVenda, Categoria? categoria, double? estoqueMinimo, double? classeDesconto, Stream imagem, DateTime? dataCad, bool descontinuado)
+        public Produto(int id, string? codBarras, string? descricao, double? valorUnit, string? unidadeVenda, Categoria? categoria, double? estoqueMinimo, double? classeDesconto, Byte[] imagem, DateTime? dataCad, bool descontinuado)
         {
             Id = id;
             CodBarras = codBarras;
@@ -43,7 +43,7 @@ namespace ComercialTDSClass
             DataCad = dataCad;
             Descontinuado = descontinuado;
         }
-        public Produto(string? codBarras, string? descricao, double? valorUnit, string? unidadeVenda, Categoria? categoria, double? estoqueMinimo, double? classeDesconto, Stream imagem)
+        public Produto(string? codBarras, string? descricao, double? valorUnit, string? unidadeVenda, Categoria? categoria, double? estoqueMinimo, double? classeDesconto, Byte[] imagem)
         {
 
             CodBarras = codBarras;
@@ -113,7 +113,7 @@ namespace ComercialTDSClass
                     Categoria.ObterPorId(dr.GetInt32(5)),
                     dr.GetDouble(6),
                     dr.GetDouble(7),
-                    dr.GetStream(8),
+                    (byte[])dr.GetValue(8),
                     dr.GetDateTime(9),
                     dr.GetBoolean(10)
                 );
@@ -127,7 +127,7 @@ namespace ComercialTDSClass
         {
             List<Produto> produtos = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select * from produto order by descricao";
+            cmd.CommandText = $"select * from produtos order by descricao";
             var dr = cmd.ExecuteReader();
             if (dr.Read())
             {
@@ -140,7 +140,7 @@ namespace ComercialTDSClass
                     Categoria.ObterPorId(dr.GetInt32(5)),
                     dr.GetDouble(6),
                     dr.GetDouble(7),
-                    dr.GetStream(8),
+                    (byte[])dr.GetValue(8),
                     dr.GetDateTime(9),
                     dr.GetBoolean(10)
                   )

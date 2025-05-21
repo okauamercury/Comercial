@@ -43,3 +43,4 @@ C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\Comercia.6A1E24CB.Up2Date
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.Properties.Resources.resources
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmListar.resources
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmProdutoListar.resources

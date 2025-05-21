@@ -6,8 +6,27 @@ using System.Threading.Tasks;
 
 namespace ComercialTDSClass
 {
-    class Fornecedor
+    public class Fornecedor
     {
+        public int Id { get; set; }
+        public string? RazaoSocial { get; set; }
+        public string? Fantasia { get; set; }
+        public string? CNPJ { get; set; }
+        public Fornecedor(int id, string? razaoSocial, string? fantasia, string? cNPJ)
+        {
+            Id = id;
+            RazaoSocial = razaoSocial;
+            Fantasia = fantasia;
+            CNPJ = cNPJ;
+        }
+        public Fornecedor(string? razaoSocial, string? fantasia, string? cNPJ)
+        {
+            
+            RazaoSocial = razaoSocial;
+            Fantasia = fantasia;
+            CNPJ = cNPJ;
+        }
+        public void 
 
     }
 }

@@ -97,7 +97,18 @@ namespace ComercialTDSDesk
 
         private void listarToolStripMenuItem5_Click(object sender, EventArgs e)
         {
+            FrmListar frmListar = new();
+            frmListar.MdiParent = this;
+            frmListar.Show();
             AssiociaPanel(new FrmListar());
+        }
+
+        private void listarToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            FrmProdutoListar frmProdutoListar = new();
+            frmProdutoListar.MdiParent = this;
+            frmProdutoListar.Show();
+            AssiociaPanel(new FrmProdutoListar());
         }
     }
 }

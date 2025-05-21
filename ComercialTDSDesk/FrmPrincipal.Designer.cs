@@ -116,6 +116,7 @@
             listarToolStripMenuItem6.Name = "listarToolStripMenuItem6";
             listarToolStripMenuItem6.Size = new Size(180, 22);
             listarToolStripMenuItem6.Text = "&Listar";
+            listarToolStripMenuItem6.Click += listarToolStripMenuItem6_Click;
             // 
             // fornecedorToolStripMenuItem1
             // 
@@ -177,21 +178,21 @@
             // incluirToolStripMenuItem5
             // 
             incluirToolStripMenuItem5.Name = "incluirToolStripMenuItem5";
-            incluirToolStripMenuItem5.Size = new Size(180, 22);
+            incluirToolStripMenuItem5.Size = new Size(107, 22);
             incluirToolStripMenuItem5.Text = "&Incluir";
             incluirToolStripMenuItem5.Click += incluirToolStripMenuItem5_Click;
             // 
             // listarToolStripMenuItem5
             // 
             listarToolStripMenuItem5.Name = "listarToolStripMenuItem5";
-            listarToolStripMenuItem5.Size = new Size(180, 22);
+            listarToolStripMenuItem5.Size = new Size(107, 22);
             listarToolStripMenuItem5.Text = "&Listar";
             listarToolStripMenuItem5.Click += listarToolStripMenuItem5_Click;
             // 
             // niveisToolStripMenuItem
             // 
             niveisToolStripMenuItem.Name = "niveisToolStripMenuItem";
-            niveisToolStripMenuItem.Size = new Size(180, 22);
+            niveisToolStripMenuItem.Size = new Size(107, 22);
             niveisToolStripMenuItem.Text = "&Niveis";
             niveisToolStripMenuItem.Click += niveisToolStripMenuItem_Click;
             // 

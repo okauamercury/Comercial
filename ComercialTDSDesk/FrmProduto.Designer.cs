@@ -79,6 +79,7 @@
             nudValorUnit.Name = "nudValorUnit";
             nudValorUnit.Size = new Size(100, 23);
             nudValorUnit.TabIndex = 2;
+            nudValorUnit.ValueChanged += nudValorUnit_ValueChanged;
             // 
             // txtUnidadeVenda
             // 

@@ -73,7 +73,7 @@
             txtSenha.PlaceholderText = "Senha";
             txtSenha.Size = new Size(219, 23);
             txtSenha.TabIndex = 3;
-            txtSenha.Text = "ACdb123#$";
+            txtSenha.Text = "123";
             txtSenha.UseSystemPasswordChar = true;
             // 
             // chkExibeSenha

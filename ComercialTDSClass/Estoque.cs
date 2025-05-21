@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,20 +29,20 @@ namespace ComercialTDSClass
             Quantidade = quantidade;
             DataUltimo = dataUltimo;
         }
-        public void Inserir()
-            //  spid int,
-            //spnome varchar(45),
-            //spsigla varchar(45),
-            //spdataultimo datetime(6)
+        public void Atualizar()
         {
+           
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.CommandText = "sp_estoque_update";
             cmd.Parameters.AddWithValue("spid", Id);
             cmd.Parameters.AddWithValue("spquantidade",Quantidade);
             cmd.Parameters.AddWithValue("spdataultimo",DataUltimo);
-            Id = Convert.ToInt32(cmd.ExecuteScalar());
+            Id = Convert.ToInt32(cmd.ExecuteNonQuery());
+            
             cmd.Connection.Close();
+                     
+
         }
        
     }

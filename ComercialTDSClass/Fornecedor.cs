@@ -15,10 +15,13 @@ namespace ComercialTDSClass
         public int Id { get; set; }
         public string? RazaoSocial { get; set; }
         public string? Fantasia { get; set; }
-        public string CNPJ { get; set; }
+        public string? CNPJ { get; set; }
         public int Contato { get; set; }
         public int Telefone { get; set; }
-        public string Email { get; set; }
+        public string? Email { get; set; }
+
+
+        public Fornecedor() { }
         public Fornecedor(int id, string? razaoSocial, string? fantasia, string CNPJ)
         {
             Id = id;
@@ -77,35 +80,59 @@ namespace ComercialTDSClass
         }
         public static Fornecedor ObterPorId(int id)
         {
-            
+
+            Fornecedor fornecedor = new();
             var cmd = Banco.Abrir();
-            
             cmd.CommandText = $"select * from produto where id = {id}";
             var dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                Fornecedor fornecedor = new()
-                {
-                  dr.GetInt32(0)
-                    dr.GetString(1),
-                    dr.GetInt32(2),
-                    dr.GetInt32(3),
-                    dr.GetInt32(4),
-                    dr.GetString(5))
-                };
+                fornecedor = new();
+                dr.GetInt32(0);
+                dr.GetString(1);
+                dr.GetString(2);
+                dr.GetString(3);
+                Fornecedor.ObterPorId(dr.GetInt32(4));
+                dr.GetBoolean(5);
+                 
+            }
+            dr.Close();
+            cmd.Connection.Close();
+            return fornecedor;
+           
+           
+
+           
+        }
+        public static List<Fornecedor> ObterPorLista(int limit)
+        {
+            List<Fornecedor> fornecedor = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select *from fornecedores order by";
+            var dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                fornecedor = new();
+                dr.GetInt32(0);
+                dr.GetString(1);
+                dr.GetString(2);
+                dr.GetString(3);
+                Fornecedor.ObterPorLista(dr.GetInt32(4));
+                dr.GetBoolean(5);
+
+            }
+            dr.Close();
+            cmd.Connection.Close();
+
+            return fornecedor;
+        }
+
+           
+        
+                 
+                
                     
               
-            }
-           dr.Close();
-           cmd.Connection.Close();
-           return Fornecedor;
-        }
-        public static Fornecedor ObterPorLista()
-        {
-
-            return ObterPorLista;
-        }
-        
       
           
 

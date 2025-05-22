@@ -44,6 +44,46 @@ namespace ComercialTDSClass
                      
 
         }
-       
+        public static Estoque ObterPorId(int id)
+        {
+
+            Estoque estoque = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = $"select * from produto where id = {id}";
+            var dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                estoque = new();
+                dr.GetInt32(0);
+                dr.GetDecimal(1);
+                dr.GetDateTime(3);
+
+            }
+            dr.Close();
+            cmd.Connection.Close();
+            return estoque;
+
+        }
+        public static List<Estoque> ObterPorLista(int limit)
+        {
+            List<Estoque> estoque = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select *from fornecedores order by";
+            var dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                estoque = new();
+                dr.GetInt32(0);
+                dr.GetDecimal(1);
+                dr.GetDateTime(3);
+            }
+            dr.Close();
+            cmd.Connection.Close();
+
+            return estoque;
+        }
     }
 }
+
+
+

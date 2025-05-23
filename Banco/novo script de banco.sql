@@ -1,248 +1,709 @@
 
-insert into categorias (nome) values ('Missangas & Confecção de Joias');
-insert into categorias (nome) values ('Decoração de tecidos');
-insert into categorias (nome) values ('Tricô & Suprimentos de Crochê');
-insert into categorias (nome) values ('Suprimentos para impressão');
-insert into categorias (nome) values ('Estamparia de Suprimentos');
-insert into categorias (nome) values ('Produtos de Costura');
-insert into categorias (nome) values ('Artesanato & Hobby Tecido');
-insert into categorias (nome) values ('Suprimentos para agulhas');
-insert into categorias (nome) values ('Artes, Ofícios e Costura');
-insert into categorias (nome) values ('Pintura, Desenho e Suprimentos de Arte');
-insert into categorias (nome) values ('Suprimentos Artesanais e Materiais');
-insert into categorias (nome) values ('Suprimentos para embrulho de presente');
-insert into categorias (nome) values ('Decorações de Festa');
-insert into categorias (nome) values ('Tintas Automotivas e Suprimentos para Tintas');
-insert into categorias (nome) values ('Equipamentos para Serviços Pesados e Veículos Comerciais');
-insert into categorias (nome) values ('Pneus Automotivos e Rodas');
-insert into categorias (nome) values ('Ferramentas Automotivas e Equipamentos');
-insert into categorias (nome) values ('Peças e Acessórios de Performance Automotiva');
-insert into categorias (nome) values ('Cuidados com o carro');
-insert into categorias (nome) values ('Óleos e Fluidos');
-insert into categorias (nome) values ('Peças de Reposição Automotivas');
-insert into categorias (nome) values ('Luzes, Lâmpadas e Indicadores');
-insert into categorias (nome) values ('Acessórios para interiores automotivos');
-insert into categorias (nome) values ('Acessórios Automotivos Externos');
-insert into categorias (nome) values ('Mercadoria para entusiastas automotivos');
-insert into categorias (nome) values ('Eletrônica Automotiva e Acessórios');
-insert into categorias (nome) values ('RV Parts &Acessórios');
-insert into categorias (nome) values ('Motocicleta');
-insert into categorias (nome) values ('Produtos para Fraldas para Bebês');
-insert into categorias (nome) values ('Suprimentos de alimentação para bebês');
-insert into categorias (nome) values ('Gravidez & Produtos para Maternidade');
-insert into categorias (nome) values ('Cadeirinhas para Carros de Segurança Infantil e Acessórios');
-insert into categorias (nome) values ('Produtos de segurança para bebês');
-insert into categorias (nome) values ('Produtos para treinamento de toalete');
-insert into categorias (nome) values ('Produtos para Cuidados com o Bebê');
-insert into categorias (nome) values ('Equipamento de viagem para bebés');
-insert into categorias (nome) values ('Atividade do bebê e produtos de entretenimento');
-insert into categorias (nome) values ('Presentes de Bebê');
-insert into categorias (nome) values ('Papelaria para Bebês');
-insert into categorias (nome) values ('Mobiliário de Creche, Roupa de Cama e Decoração');
-insert into categorias (nome) values ('Bebê');
-insert into categorias (nome) values ('Infantil Roupas e Calçados');
-insert into categorias (nome) values ('Carrinhos de bebê e acessórios');
-insert into categorias (nome) values ('Beleza e Cuidados Pessoais');
-insert into categorias (nome) values ('Perfumes e Fragrâncias');
-insert into categorias (nome) values ('Produtos para cuidados com o cabelo');
-insert into categorias (nome) values ('Maquiagem');
-insert into categorias (nome) values ('Produtos de cuidados da pele');
-insert into categorias (nome) values ('Ferramentas de Beleza e Acessórios');
-insert into categorias (nome) values ('Produtos para Cuidados com Pé, Mão e Unhas');
-insert into categorias (nome) values ('Produtos de Higiene Pessoal');
-insert into categorias (nome) values ('Produtos de barbear e depilação');
-insert into categorias (nome) values ('Servidores de Computador');
-insert into categorias (nome) values ('Armazenamento de dados');
-insert into categorias (nome) values ('Monitores de computador');
-insert into categorias (nome) values ('Computadores & Tablets');
-insert into categorias (nome) values ('Peças de reposição de comprimidos');
-insert into categorias (nome) values ('Redes de Computadores');
-insert into categorias (nome) values ('Componentes do computador');
-insert into categorias (nome) values ('Acessórios para Tablets');
-insert into categorias (nome) values ('Acessórios para laptop');
-insert into categorias (nome) values ('Componentes externos do computador');
-insert into categorias (nome) values ('Tecnologia vestível');
-insert into categorias (nome) values ('Televisores e Produtos de Vídeo');
-insert into categorias (nome) values ('GPS & Navegação');
-insert into categorias (nome) values ('Fones de ouvido & Earbuds');
-insert into categorias (nome) values ('Eletrônica de Escritório');
-insert into categorias (nome) values ('Áudio portátil & Vídeo');
-insert into categorias (nome) values ('Leitores de eBook e Acessórios');
-insert into categorias (nome) values ('Celulares e Acessórios');
-insert into categorias (nome) values ('Acessórios e Suprimentos');
-insert into categorias (nome) values ('Projetores de vídeo');
-insert into categorias (nome) values ('Eletrônica veicular');
-insert into categorias (nome) values ('Câmera & Foto');
-insert into categorias (nome) values ('Segurança e Equipamentos de Vigilância');
-insert into categorias (nome) values ('Computadores');
-insert into categorias (nome) values ('Home Áudio e Produtos de Teatro');
-insert into categorias (nome) values ('Consoles de videogame e acessórios');
-insert into categorias (nome) values ('Roupas para Meninos');
-insert into categorias (nome) values ('Acessórios para Meninos');
-insert into categorias (nome) values ('Joias para meninos');
-insert into categorias (nome) values ('Relógios para Meninos');
-insert into categorias (nome) values ('Sapatos para Meninos');
-insert into categorias (nome) values ('Roupas Femininas');
-insert into categorias (nome) values ('Acessórios para Meninas');
-insert into categorias (nome) values ('Joias Femininas');
-insert into categorias (nome) values ('Relógios para Meninas');
-insert into categorias (nome) values ('Sapatos Femininos');
-insert into categorias (nome) values ('Uniformes Escolares para Meninas');
-insert into categorias (nome) values ('Bolsas de viagem');
-insert into categorias (nome) values ('Sacolas de Viagem');
-insert into categorias (nome) values ('Sacos de Vestuário');
-insert into categorias (nome) values ('Conjuntos de Bagagem');
-insert into categorias (nome) values ('Malas');
-insert into categorias (nome) values ('Acessórios de Viagem');
-insert into categorias (nome) values ('Guarda-chuvas');
-insert into categorias (nome) values ('Mochilas');
-insert into categorias (nome) values ('Bagagem');
-insert into categorias (nome) values ('Bolsas para laptop');
-insert into categorias (nome) values ('Vestuário Masculino');
-insert into categorias (nome) values ('Acessórios Masculinos');
-insert into categorias (nome) values ('Relógios Masculinos');
-insert into categorias (nome) values ('Calçados Masculinos');
-insert into categorias (nome) values ('Vestuário Feminino');
-insert into categorias (nome) values ('Bolsas Femininas');
-insert into categorias (nome) values ('Acessórios Femininos');
-insert into categorias (nome) values ('Relógios Femininos');
-insert into categorias (nome) values ('Calçados Femininos');
-insert into categorias (nome) values ('Joias Femininas');
-insert into categorias (nome) values ('Mobiliário Infantil');
-insert into categorias (nome) values ('Cartões-presente');
-insert into categorias (nome) values ('Produtos de higiene bucal');
-insert into categorias (nome) values ('Produtos Visão');
-insert into categorias (nome) values ('Produtos de Bem-Estar e Relaxamento');
-insert into categorias (nome) values ('Produtos para Cuidados com o Bebê e Crianças');
-insert into categorias (nome) values ('Suprimentos Domésticos');
-insert into categorias (nome) values ('Produtos para cuidados com a saúde');
-insert into categorias (nome) values ('Dieta & Nutrição Esportiva');
-insert into categorias (nome) values ('Suprimentos Médicos de Uso Doméstico e Equipamentos');
-insert into categorias (nome) values ('Produtos de bem-estar sexual');
-insert into categorias (nome) values ('Saúde e Domicílio');
-insert into categorias (nome) values ('Produtos de Nutrição Esportiva');
-insert into categorias (nome) values ('Papelaria & Suprimentos para Embrulho de Presente');
-insert into categorias (nome) values ('Produtos para Portas Comerciais');
-insert into categorias (nome) values ('Produtos de Transmissão de Energia');
-insert into categorias (nome) values ('Materiais Industriais');
-insert into categorias (nome) values ('Industrial Hardware');
-insert into categorias (nome) values ('Produtos Abrasivos e de Acabamento');
-insert into categorias (nome) values ('Adesivos Industriais, Selantes e Lubrificantes');
-insert into categorias (nome) values ('Produtos para Movimentação de Materiais');
-insert into categorias (nome) values ('Testar, Medir e Inspecionar');
-insert into categorias (nome) values ('Energia Industrial & Ferramentas Manuais');
-insert into categorias (nome) values ('Hidráulica, Pneumática e Hidráulica');
-insert into categorias (nome) values ('Filtração');
-insert into categorias (nome) values ('Componentes Eletrônicos');
-insert into categorias (nome) values ('Laboratório e Produtos Científicos');
-insert into categorias (nome) values ('Zeladoria e Abastecimento de Saneamento');
-insert into categorias (nome) values ('Produtos de Segurança e Saúde Ocupacional');
-insert into categorias (nome) values ('Ferramentas de Corte');
-insert into categorias (nome) values ('Fixadores');
-insert into categorias (nome) values ('Materiais para Educação Científica');
-insert into categorias (nome) values ('Equipamentos de Food Service e Suprimentos');
-insert into categorias (nome) values ('Produtos de Manufatura Aditiva');
-insert into categorias (nome) values ('Suprimentos médicos profissionais');
-insert into categorias (nome) values ('Suprimentos Odontológicos Profissionais');
-insert into categorias (nome) values ('Embalagem e Envio de Suprimentos');
-insert into categorias (nome) values ('Equipamentos para lojas de varejo e equipamentos');
-insert into categorias (nome) values ('Industrial e Científica');
-insert into categorias (nome) values ('Produtos de Banho');
-insert into categorias (nome) values ('Roupa de cama');
-insert into categorias (nome) values ('Home decoração Produtos');
-insert into categorias (nome) values ('Mobiliário');
-insert into categorias (nome) values ('Material de limpeza doméstica');
-insert into categorias (nome) values ('Iluminação Doméstica e Ventiladores de Teto');
-insert into categorias (nome) values ('Cozinha e Jantar');
-insert into categorias (nome) values ('Aquecimento, Resfriamento e Qualidade do Ar');
-insert into categorias (nome) values ('Loja Infantil em Casa');
-insert into categorias (nome) values ('Armazenamento doméstico & Organização');
-insert into categorias (nome) values ('Arte de parede');
-insert into categorias (nome) values ('Aspiradores de pó e cuidados com o piso');
-insert into categorias (nome) values ('Produtos de Engomadoria');
-insert into categorias (nome) values ('Suprimentos para Festas');
-insert into categorias (nome) values ('Suprimentos para pássaros de estimação');
-insert into categorias (nome) values ('Suprimentos Cat');
-insert into categorias (nome) values ('Suprimentos para cães');
-insert into categorias (nome) values ('Peixes e Animais de Estimação Aquáticos');
-insert into categorias (nome) values ('Suprimentos para cavalos');
-insert into categorias (nome) values ('Répteis e suprimentos para anfíbios');
-insert into categorias (nome) values ('Suprimentos para Pequenos Animais');
-insert into categorias (nome) values ('Casa Inteligente: Novos Dispositivos Inteligentes');
-insert into categorias (nome) values ('Casa Inteligente: Assistentes de Voz e Hubs');
-insert into categorias (nome) values ('Casa Inteligente: Fechaduras Inteligentes e Entrada');
-insert into categorias (nome) values ('Casa Inteligente: Entretenimento Doméstico');
-insert into categorias (nome) values ('Casa Inteligente: Wi-Fi e Rede');
-insert into categorias (nome) values ('Casa Inteligente: Câmeras e Sistemas de Segurança');
-insert into categorias (nome) values ('Casa Inteligente: Iluminação');
-insert into categorias (nome) values ('Casa Inteligente: Plugues e Tomadas');
-insert into categorias (nome) values ('Casa Inteligente: Aspiradores e Mops');
-insert into categorias (nome) values ('Termostatos domésticos inteligentes - Verificador de Compatibilidade');
-insert into categorias (nome) values ('Casa Inteligente: Gramado e Jardim');
-insert into categorias (nome) values ('Casa Inteligente: Outras Soluções');
-insert into categorias (nome) values ('Casa Inteligente - Aquecimento e Refrigeração');
-insert into categorias (nome) values ('Esportes & Fitness');
-insert into categorias (nome) values ('Recreação ao ar livre');
-insert into categorias (nome) values ('Esportes & Ar Livre');
-insert into categorias (nome) values ('Eletrodomésticos');
-insert into categorias (nome) values ('Bombas e Equipamentos Hidráulicos');
-insert into categorias (nome) values ('Pintura, Tratamentos de Parede e Suprimentos');
-insert into categorias (nome) values ('Segurança & Segurança');
-insert into categorias (nome) values ('Lâmpadas');
-insert into categorias (nome) values ('Ferramentas Elétricas & Ferramentas Manuais');
-insert into categorias (nome) values ('Utensílios de cozinha e banho');
-insert into categorias (nome) values ('Iluminação & Ventiladores de Teto');
-insert into categorias (nome) values ('Equipamentos Elétricos');
-insert into categorias (nome) values ('Hardware');
-insert into categorias (nome) values ('Material de Construção');
-insert into categorias (nome) values ('Medição & Layout');
-insert into categorias (nome) values ('Solda & Solda');
-insert into categorias (nome) values ('Ferramentas');
-insert into categorias (nome) values ('Suprimentos para festas infantis');
-insert into categorias (nome) values ('Figuras de Brinquedo e Conjuntos de jogos');
-insert into categorias (nome) values ('Novidade Brinquedos & Diversões');
-insert into categorias (nome) values ('Suprimentos de Artes e Artesanato');
-insert into categorias (nome) values ('Brinquedos de construção');
-insert into categorias (nome) values ('Bonecas e Acessórios');
-insert into categorias (nome) values ('Eletrônica Infantil');
-insert into categorias (nome) values ('Jogos & Acessórios');
-insert into categorias (nome) values ('Brinquedos de Aprendizagem e Educação');
-insert into categorias (nome) values ('Fantoches e Teatros de Marionetas');
-insert into categorias (nome) values ('Enigmas');
-insert into categorias (nome) values ('Esportes e Brinquedos ao Ar Livre');
-insert into categorias (nome) values ('bichos de pelúcia e brinquedos de pelúcia');
-insert into categorias (nome) values ('Brinquedos para bebês e crianças');
-insert into categorias (nome) values ('Triciclos, Scooters e Vagões');
-insert into categorias (nome) values ('Brinquedos de dedo');
-insert into categorias (nome) values ('Conjuntos de jogos de veículos de brinquedo');
-insert into categorias (nome) values ('Brincadeiras Infantis Trens e Bondes');
-insert into categorias (nome) values ('Brincadeiras Infantis Caminhões');
-insert into categorias (nome) values ('Carros de Brincar com Crianças e Carros de Corrida');
-insert into categorias (nome) values ('Barcos de Brincadeiras Infantis');
-insert into categorias (nome) values ('Ônibus para crianças');
-insert into categorias (nome) values ('Tratores Infantis');
-insert into categorias (nome) values ('Carros Caça-Níqueis, Pistas de Corrida e Acessórios');
-insert into categorias (nome) values ('Sony PSP Jogos, Consoles e Acessórios');
-insert into categorias (nome) values ('Nintendo DS Jogos, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos PlayStation 3, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos Wii, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos Xbox 360, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos para Mac & Acessórios');
-insert into categorias (nome) values ('Nintendo 3DS & 2DS Consoles, Jogos e Acessórios');
-insert into categorias (nome) values ('Sistemas Legados');
-insert into categorias (nome) values ('Jogos PlayStation Vita, Consolas e Acessórios');
-insert into categorias (nome) values ('Jogos Wii U, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos PlayStation 4, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos Xbox One, Consoles e Acessórios');
-insert into categorias (nome) values ('Jogos eletrônicos');
-insert into categorias (nome) values ('Serviços de Jogos de Vídeo Online');
-insert into categorias (nome) values ('Hardware de Realidade Virtual e Acessórios');
-insert into categorias (nome) values ('Nintendo Switch Consoles, Jogos e Acessórios');
-insert into categorias (nome) values ('Consolas, Jogos e Acessórios PlayStation 5');
-insert into categorias (nome) values ('Xbox Series X & S Consoles, Jogos e Acessórios');
-insert into categorias (nome) values ('Jogos para PC & Acessórios');
-insert into categorias (nome) values ('Roupas para Meninas e Sapatos');
-insert into categorias (nome) values ('Uniformes Escolares para Meninos');
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema comercialtdsdb01
+-- -----------------------------------------------------
+-- drop Schema `comercialtdsdb01`;
+-- -----------------------------------------------------
+-- Schema comercialtdsdb01
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `comercialtdsdb01` DEFAULT CHARACTER SET utf8 ;
+USE `comercialtdsdb01` ;
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`niveis`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`niveis` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `sigla` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
 
-select * from categorias;
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`usuarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`usuarios` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(60) NOT NULL,
+  `email` VARCHAR(60) NOT NULL,
+  `senha` VARCHAR(32) NOT NULL,
+  `nivel_id` INT NOT NULL,
+  `ativo` BIT(1) NOT NULL DEFAULT b'1',
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) ,
+  INDEX `fk_usuarios_niveis1_idx` (`nivel_id` ASC) ,
+  CONSTRAINT `fk_usuarios_niveis1`
+    FOREIGN KEY (`nivel_id`)
+    REFERENCES `comercialtdsdb01`.`niveis` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1001
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`caixas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`caixas` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `usuario_id` INT(4) NOT NULL,
+  `data_abertura` DATETIME NOT NULL,
+  `saldo_inicial` DECIMAL(10,2) NOT NULL,
+  `status` CHAR(1) NOT NULL DEFAULT 'A',
+  PRIMARY KEY (`id`),
+  INDEX `fk_Caixa_Usuarios1_idx` (`usuario_id` ASC) ,
+  CONSTRAINT `fk_Caixa_Usuarios1`
+    FOREIGN KEY (`usuario_id`)
+    REFERENCES `comercialtdsdb01`.`usuarios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`categorias`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`categorias` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(255) NOT NULL,
+  `sigla` CHAR(3) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`clientes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`clientes` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(100) NOT NULL,
+  `cpf` CHAR(11) NOT NULL,
+  `telefone` CHAR(14) NULL DEFAULT NULL,
+  `email` VARCHAR(60) NOT NULL,
+  `data_nasc` DATE NULL DEFAULT NULL,
+  `data_cad` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  `ativo` BIT(1) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC) ,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) )
+ENGINE = InnoDB
+AUTO_INCREMENT = 10001
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`enderecos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`enderecos` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `cliente_id` INT(4) NOT NULL,
+  `cep` CHAR(8) NOT NULL,
+  `logradouro` VARCHAR(100) NULL DEFAULT NULL,
+  `numero` VARCHAR(40) NOT NULL,
+  `complemento` VARCHAR(60) NULL DEFAULT NULL,
+  `bairro` VARCHAR(60) NOT NULL,
+  `cidade` VARCHAR(60) NOT NULL,
+  `uf` CHAR(2) NOT NULL,
+  `tipo_endereco` CHAR(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_table1_clientes_idx` (`cliente_id` ASC) ,
+  CONSTRAINT `fk_table1_clientes`
+    FOREIGN KEY (`cliente_id`)
+    REFERENCES `comercialtdsdb01`.`clientes` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`produtos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`produtos` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `cod_barras` VARCHAR(60) NOT NULL,
+  `descricao` VARCHAR(60) NOT NULL,
+  `valor_unit` DECIMAL(10,2) NOT NULL,
+  `unidade_venda` VARCHAR(12) NOT NULL,
+  `categoria_id` INT(4) NOT NULL,
+  `estoque_minimo` DECIMAL(10,2) NOT NULL,
+  `classe_desconto` DECIMAL(10,2) NULL DEFAULT NULL,
+  `imagem` BLOB NULL DEFAULT NULL,
+  `data_cad` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+   `descontinuado` BIT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `idProduto_UNIQUE` (`id` ASC) ,
+  UNIQUE INDEX `Produtocol_UNIQUE` (`cod_barras` ASC) ,
+  INDEX `fk_Produto_Categorias1_idx` (`categoria_id` ASC) ,
+  CONSTRAINT `fk_Produto_Categorias1`
+    FOREIGN KEY (`categoria_id`)
+    REFERENCES `comercialtdsdb01`.`categorias` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+-- hashcode
+AUTO_INCREMENT = 7400001
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`estoques`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`estoques` (
+  `produto_id` INT(4) NOT NULL,
+  `quantidade` DECIMAL(10,2) NOT NULL,
+  `data_ultimo_movimento` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP(),
+  INDEX `fk_Estoque_Produto1_idx` (`produto_id` ASC) ,
+  CONSTRAINT `fk_Estoque_Produto1`
+    FOREIGN KEY (`produto_id`)
+    REFERENCES `comercialtdsdb01`.`produtos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`fornecedores`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`fornecedores` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `razao_social` VARCHAR(100) NOT NULL,
+  `fantasia` VARCHAR(40) NOT NULL,
+  `cnpj` CHAR(14) NOT NULL,
+  `contato` VARCHAR(60) NULL DEFAULT NULL,
+  `telefone` VARCHAR(45) NULL DEFAULT NULL,
+  `email` VARCHAR(60) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `cnpj_UNIQUE` (`cnpj` ASC) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`pedidos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`pedidos` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `usuario_id` INT(4) NOT NULL,
+  `cliente_id` INT(4) NOT NULL,
+  `data` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  `status` CHAR(1) NOT NULL DEFAULT 'A',
+  `desconto` DECIMAL(10,2) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_Pedido_Usuarios1_idx` (`usuario_id` ASC) ,
+  INDEX `fk_Pedido_Clientes1_idx` (`cliente_id` ASC) ,
+  CONSTRAINT `fk_Pedido_Clientes1`
+    FOREIGN KEY (`cliente_id`)
+    REFERENCES `comercialtdsdb01`.`clientes` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Pedido_Usuarios1`
+    FOREIGN KEY (`usuario_id`)
+    REFERENCES `comercialtdsdb01`.`usuarios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 100001
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`itempedido`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`itempedido` (
+  `id` INT(4) NOT NULL AUTO_INCREMENT,
+  `pedido_id` INT(11) NOT NULL,
+  `produto_id` INT(11) NOT NULL,
+  `valor_unit` DECIMAL(10,2) NOT NULL,
+  `quantidade` DECIMAL(10,2) NOT NULL,
+  `desconto` DECIMAL(10,2) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_ItemPedido_Pedido1_idx` (`pedido_id` ASC) ,
+  INDEX `fk_ItemPedido_Produto1_idx` (`produto_id` ASC) ,
+  CONSTRAINT `fk_ItemPedido_Pedido1`
+    FOREIGN KEY (`pedido_id`)
+    REFERENCES `comercialtdsdb01`.`pedidos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ItemPedido_Produto1`
+    FOREIGN KEY (`produto_id`)
+    REFERENCES `comercialtdsdb01`.`produtos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `comercialtdsdb01`.`produtofornecedor`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`produtofornecedor` (
+  `produto_id` INT(4) NOT NULL,
+  `fornecedores_id` INT(4) NOT NULL,
+  PRIMARY KEY (`produto_id`, `fornecedores_id`),
+  INDEX `fk_Produto_has_Fornecedores_Fornecedores1_idx` (`fornecedores_id` ASC) ,
+  INDEX `fk_Produto_has_Fornecedores_Produto1_idx` (`produto_id` ASC) ,
+  CONSTRAINT `fk_Produto_has_Fornecedores_Fornecedores1`
+    FOREIGN KEY (`fornecedores_id`)
+    REFERENCES `comercialtdsdb01`.`fornecedores` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Produto_has_Fornecedores_Produto1`
+    FOREIGN KEY (`produto_id`)
+    REFERENCES `comercialtdsdb01`.`produtos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+USE `comercialtdsdb01` ;
+
+-- -----------------------------------------------------
+-- Placeholder table for view `comercialtdsdb01`.`vw_pedido`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `comercialtdsdb01`.`vw_pedido` (`pedido` INT, `cliente` INT, `produto` INT, `quantidade` INT, `valor_item` INT, `desc_item` INT, `desc_pedido` INT, `cod_barras` INT, `descricao` INT);
+
+-- -----------------------------------------------------
+-- procedure sp_categoria_delete
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_categoria_delete`(spid int)
+begin
+	delete from categorias
+    where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_categoria_insert
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_categoria_insert`(spnome varchar(40), spsigla char(3))
+begin
+	insert into categorias
+    values(0,spnome,spsigla);
+    select last_insert_id();
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_categoria_update
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_categoria_update`(spid int, spnome varchar(40), spsigla char(3))
+begin
+	update categorias set nome = spnome, sigla = spsigla
+    where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_endereco_delete
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_endereco_delete`(spid int)
+begin
+delete from enderecos
+where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_endereco_insert
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_endereco_insert`(
+    spcliente_id int, 
+    spcep char(8), 
+    splogradouro varchar(100),
+    spnumero varchar(40),
+    spcomplemento varchar(60),
+    spbairro varchar(60),
+    spcidade varchar(60),
+    spuf char(2),
+    sptipo_endereco char(3)
+    )
+begin
+		insert into enderecos 
+        values (0,spcliente_id, spcep, splogradouro, spnumero, spcomplemento, spbairro, spcidade, spuf, sptipo_endereco);
+        select @@identity as id;
+    end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_endereco_update
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_endereco_update`(
+spid int,
+spcep char(8), 
+splogradouro varchar(100),
+spnumero varchar(40),
+spcomplemento varchar(60),
+spbairro varchar(60),
+spcidade varchar(60),
+spuf char(2),
+sptipo_endereco char(3))
+begin
+	 update enderecos set cep = spcep, 
+     logradouro = splogradouro, 
+     numero = spnumero, 
+	 complemento = spcomplemento, 
+	 bairro = spbairro, 
+	 cidade = spcidade, 
+	 uf = spuf,
+	 tipo_endereco = sptipo_endereco 
+	 where id = spid;
+ end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_insere_cliente
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_cliente_insert`(
+spnome varchar(100), 
+spcpf char(11), 
+sptelefone char(14), 
+spemail varchar(60), 
+spdatanasc date
+)
+begin 
+	insert into clientes 
+    values (0,spnome, spcpf, sptelefone, spemail, spdatanasc,default,1);
+    select  last_insert_id();
+end$$
+
+DELIMITER ;
+
+
+
+USE `comercialtdsdb01`;
+DROP procedure IF EXISTS `sp_cliente_update`;
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE PROCEDURE `sp_cliente_update` (spid int, spnome varchar(100), sptelefone char(14), spdatanasc date)
+BEGIN
+ update clientes set nome= spnome, telefone  = sptelefone, data_nasc = spdatanasc where id = spid; 
+END$$
+
+DELIMITER ;
+
+
+
+-- -----------------------------------------------------
+-- procedure sp_itempedido_delete
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_itempedido_delete`(spid int)
+begin
+	delete from itempedido
+    where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_itempedido_insert
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_itempedido_insert`(sppedido_id int, spproduto_id int, spquantidade decimal (10,2), spdesconto decimal(10,2))
+begin
+	insert into itempedido
+    values (0, sppedido_id, spproduto_id, (select valor_unit from produtos where id = spproduto_id), spquantidade, spdesconto);
+    select last_insert_id();
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_itempedido_update
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_itempedido_update`(spid int,spquantidade decimal(10,2), spdesconto decimal(10,2))
+begin
+	update itempedido set quantidade = spquantidade, desconto = spdesconto
+    where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_pedido_insert
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_pedido_insert`(spusuario_id int, spcliente_id int)
+begin
+	insert into pedidos
+    values(0, spusuario_id, spcliente_id,default , 'A', 0);
+    select last_insert_id();
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_pedido_update
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_pedido_update`(spid int, spstatus char(1), spdesconto decimal(10,2))
+begin
+	update pedidos set status = spstatus, desconto = spdesconto
+    where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_produto_insert
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+USE `comercialtdsdb01`;
+DROP procedure IF EXISTS `sp_produto_insert`;
+
+USE `comercialtdsdb01`;
+DROP procedure IF EXISTS `comercialtdsdb01`.`sp_produto_insert`;
+;
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_produto_insert`(
+spcod_barras varchar(60), 
+spdescricao varchar(60),
+spvalor_unit decimal(10,2),
+spunidade_venda varchar(12),
+spcategoria_id int,
+spestoque_minimo decimal(10,2),
+spclasse_desconto decimal(10,2),
+spimagem blob
+)
+begin
+	insert into produtos
+    values(
+    0,
+    spcod_barras, 
+    spdescricao, 
+    spvalor_unit, 
+    spunidade_venda,
+    spcategoria_id, 
+    spestoque_minimo,
+    spclasse_desconto,
+    spiamgem,
+    default, 
+    default);
+    select last_insert_id();
+end$$
+
+DELIMITER ;
+;
+-- alteração da procedure de insert de produtosm, para incluir a imagem
+
+
+-- -----------------------------------------------------
+-- procedure sp_produto_update
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+USE `comercialtdsdb01`;
+DROP procedure IF EXISTS `sp_produto_update`;
+
+USE `comercialtdsdb01`;
+DROP procedure IF EXISTS `comercialtdsdb01`.`sp_produto_update`;
+;
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_produto_update`(
+spid int,
+spcod_barras varchar(60), 
+spdescricao varchar(60),
+spvalor_unit decimal(10,2),
+spunidade_venda varchar(12),
+spcategoria_id int,
+spestoque_minimo decimal(10,2),
+spclasse_desconto decimal(10,2),
+spimagem blob,
+spdescontinuado bit(1)
+
+)
+begin
+	update produtos set cod_barras = spcod_barras, descricao = spdescricao,
+    valor_unit = spvalor_unit, unidade_venda = spunidade_venda, categoria_id = spcategoria_id,
+    estoque_minimo = spestoque_minimo, classe_desconto = spclasse_desconto, descontinuado = spdescontinuado, imagem = spimagem
+    where id = spid;
+end$$
+
+DELIMITER ;
+
+
+
+
+-- -----------------------------------------------------
+-- procedure sp_usuario_altera
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+-- drop procedure `sp_usuario_altera`
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_usuario_altera`(
+-- parâmetros da procedure
+spid int, spnome varchar(60), spsenha varchar(32), spnivel int)
+begin
+	update usuarios 
+	set nome = spnome, senha = md5(spsenha), nivel_id = spnivel where id = spid;
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_usuario_insert
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_usuario_insert`(
+-- parâmetros da procedure
+spnome varchar(60), spemail varchar(60), spsenha varchar(32), spnivel int)
+begin
+	insert into usuarios 
+	values (0,spnome, spemail, md5(spsenha), spnivel, default);
+    select * from usuarios where id = last_insert_id();
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure sp_venda_terminal
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_venda_terminal`(spusuario_id int,spcpf char(11), spcodbar varchar(60))
+begin
+	insert pedidos values(0,spusuario_id,(select id from clientes where cpf = spcpf), default, 'A', 0);
+		insert itempedido values (
+			0,
+			last_insert_id(),
+			(select id from produtos where cod_barras = spcodbar),
+            (select valor_unit from produtos where cod_barras = spcodbar),
+            1,
+            0);
+	select * from itempedido where id = last_insert_id();
+end$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- View `comercialtdsdb01`.`vw_pedido`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `comercialtdsdb01`.`vw_pedido`;
+USE `comercialtdsdb01`;
+CREATE  OR REPLACE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `comercialtdsdb01`.`vw_pedido` AS select `p`.`id` AS `pedido`,`p`.`cliente_id` AS `cliente`,`ip`.`produto_id` AS `produto`,`ip`.`quantidade` AS `quantidade`,`ip`.`valor_unit` AS `valor_item`,`ip`.`desconto` AS `desc_item`,`p`.`desconto` AS `desc_pedido`,`pr`.`cod_barras` AS `cod_barras`,`pr`.`descricao` AS `descricao` from ((`comercialtdsdb01`.`pedidos` `p` join `comercialtdsdb01`.`itempedido` `ip` on(`p`.`id` = `ip`.`pedido_id`)) join `comercialtdsdb01`.`produtos` `pr` on(`ip`.`produto_id` = `pr`.`id`));
+USE `comercialtdsdb01`;
+
+DELIMITER $$
+USE `comercialtdsdb01`$$
+CREATE
+DEFINER=`root`@`localhost`
+TRIGGER `comercialtdsdb01`.`trigger_gera_estoque`
+AFTER INSERT ON `comercialtdsdb01`.`produtos`
+FOR EACH ROW
+BEGIN
+INSERT INTO estoques values(new.id, 0, current_date());
+END$$
+
+USE `comercialtdsdb01`$$
+CREATE
+DEFINER=`root`@`localhost`
+TRIGGER `comercialtdsdb01`.`trigger_baixa_estoque`
+AFTER INSERT ON `comercialtdsdb01`.`itempedido`
+FOR EACH ROW
+BEGIN
+update estoques SET quantidade = quantidade - NEW.quantidade, data_ultimo_movimento = current_date()
+where produto_id = new.produto_id
+;
+END$$
+-- SP_NIVEL_INSERT --
+delimiter $$
+          create procedure comercialtdsdb01.sp_nivel_insert(
+		   spnome varchar(45),
+           spsigla varchar(45)
+)
+begin
+		   insert into niveis(nome, sigla) values (spnome, spsigla);
+           select * from niveis where id = last_insert_id();
+end $$
+
+-- SP_NIVEL_UPDATE --
+delimiter $$
+		    create procedure comercialtdsdb01.sp_nivel_update(
+		    spid int,
+            spnome varchar(45),
+            spsigla varchar(45)
+)
+begin
+   update niveis set nome = spnome, sigla = spsigla 
+   where id = spid;
+end $$
+
+
+
+DELIMITER ;
+
+
+
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

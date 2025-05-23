@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 using System.Data;
 
+
 namespace ComercialTDSClass
 {
     public class Produto
@@ -20,7 +21,7 @@ namespace ComercialTDSClass
         public Categoria? Categoria { get; set; }
         public double? EstoqueMinimo { get; set; }
         public double? ClasseDesconto { get; set; }
-        public Byte[] Imagem { get; set; }
+        public Byte[]? Imagem { get; set; }
         public DateTime? DataCad { get; set; }
         public bool Descontinuado { get; set; }
 
@@ -129,28 +130,26 @@ namespace ComercialTDSClass
             var cmd = Banco.Abrir();
             cmd.CommandText = $"select * from produtos order by descricao";
             var dr = cmd.ExecuteReader();
-            if (dr.Read())
+            while (dr.Read())
             {
                 produtos.Add(new(
-                    dr.GetInt32(0),
-                    dr.GetString(1),
-                    dr.GetString(2),
-                    dr.GetDouble(3),
-                    dr.GetString(4),
-                    Categoria.ObterPorId(dr.GetInt32(5)),
-                    dr.GetDouble(6),
-                    dr.GetDouble(7),
-                    (byte[])dr.GetValue(8),
-                    dr.GetDateTime(9),
-                    dr.GetBoolean(10)
-                  )
+                        dr.GetInt32(0),
+                        dr.GetString(1),
+                        dr.GetString(2),
+                        dr.GetDouble(3),
+                        dr.GetString(4),
+                        Categoria.ObterPorId(dr.GetInt32(5)),
+                        dr.GetDouble(6),
+                        dr.GetDouble(7),
+                        (byte[])dr.GetValue(8),
+                        dr.GetDateTime(9),
+                        dr.GetBoolean(10)
+                    )
                 );
-
             }
             dr.Close();
             cmd.Connection.Close();
             return produtos;
-
         }
     }
 }

@@ -110,5 +110,13 @@ namespace ComercialTDSDesk
             frmProdutoListar.Show();
             AssiociaPanel(new FrmProdutoListar());
         }
+
+        private void novoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmPedido frmPedido = new();
+            frmPedido.MdiParent = this;
+            frmPedido.Show();
+            AssiociaPanel(new FrmPedido());
+        }
     }
 }

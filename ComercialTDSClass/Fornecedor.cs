@@ -15,34 +15,34 @@ namespace ComercialTDSClass
         public int Id { get; set; }
         public string? RazaoSocial { get; set; }
         public string? Fantasia { get; set; }
-        public string? CNPJ { get; set; }
-        public int Contato { get; set; }
-        public int Telefone { get; set; }
+        public string? Cnpj { get; set; }
+        public string Contato { get; set; }
+        public string Telefone { get; set; }
         public string? Email { get; set; }
 
 
         public Fornecedor() { }
-        public Fornecedor(int id, string? razaoSocial, string? fantasia, string CNPJ)
+        public Fornecedor(int id, string? razaoSocial, string? fantasia, string cnpj)
         {
             Id = id;
             RazaoSocial = razaoSocial;
             Fantasia = fantasia;
-            CNPJ = CNPJ;
+            Cnpj = cnpj;
         }
-        public Fornecedor(string? razaoSocial, string? fantasia, string CNPJ)
+        public Fornecedor(string? razaoSocial, string? fantasia, string cnpj)
         {
             
             RazaoSocial = razaoSocial;
             Fantasia = fantasia;
-            CNPJ = CNPJ;
+            Cnpj = cnpj;
         }
 
-        public Fornecedor(int id, string? razaoSocial, string? fantasia, string CNPJ, int contato, int telefone, string email)
+        public Fornecedor(int id, string? razaoSocial, string? fantasia, string cnpj, string contato, string telefone, string email)
         {
             Id = id;
             RazaoSocial = razaoSocial;
             Fantasia = fantasia;
-            CNPJ = CNPJ;
+            Cnpj = cnpj;
             Contato = contato;
             Telefone = telefone;
             Email = email;
@@ -55,7 +55,7 @@ namespace ComercialTDSClass
             cmd.CommandText = "sp_fornecedor_insert";
             cmd.Parameters.AddWithValue("spid",Id);
             cmd.Parameters.AddWithValue("sprazaosocial",RazaoSocial);
-            cmd.Parameters.AddWithValue("spcnpj", CNPJ);
+            cmd.Parameters.AddWithValue("spcnpj", Cnpj);
             cmd.Parameters.AddWithValue("spcontato", Contato);
             cmd.Parameters.AddWithValue("sptelefone", Telefone);
             cmd.Parameters.AddWithValue("spemail", Email);
@@ -70,7 +70,7 @@ namespace ComercialTDSClass
             cmd.CommandText = "sp_fornecedor_update";
             cmd.Parameters.AddWithValue("spid", Id);
             cmd.Parameters.AddWithValue("sprazaosocial", RazaoSocial);
-            cmd.Parameters.AddWithValue("spcnpj", CNPJ);
+            cmd.Parameters.AddWithValue("spcnpj", Cnpj);
             cmd.Parameters.AddWithValue("spcontato", Contato);
             cmd.Parameters.AddWithValue("sptelefone", Telefone);
             cmd.Parameters.AddWithValue("spemail", Email);

@@ -56,24 +56,76 @@ namespace ComercialTDSClass
         // metodos da classe
         public void Inserir() 
         {
-        
+            var cmd = Banco.Abrir();
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.CommandText = "sp_pedido_insert";
+            cmd.Parameters.AddWithValue("spusuario_id",Usuario.Id);
+            cmd.Parameters.AddWithValue("spcliente_id",Cliente.Id);
+            Id = Convert.ToInt32(cmd.ExecuteScalar());
+            cmd.Connection.Close();
         }
         public bool Atualizar()
         {
-            return true;
+            var cmd = Banco.Abrir();
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.CommandText = "sp_pedido_update";
+            cmd.Parameters.AddWithValue("spid",Id);
+            cmd.Parameters.AddWithValue("spstatus", Status);
+            cmd.Parameters.AddWithValue("spdesconto",Desconto);
+
+            bool atualizado = cmd.ExecuteNonQuery() > 0? true:false;
+            cmd.Connection.Close();
+            return atualizado;
         }
         public static Pedido ObterPorId(int id)
         {
             Pedido pedido = new();
-            
+            var cmd = Banco.Abrir();
+            cmd.CommandText = $"select *from pedido where id {id}";
+            var dr = cmd.ExecuteReader();
+            while(dr.Read())
+            {
+                pedido = new(
+                         dr.GetInt32(0),
+                         Usuario.ObterPorId(dr.GetInt32(1)),
+                         Cliente.ObterPorId(dr.GetInt32(2)),
+                         dr.GetDateTime(3),
+                         dr.GetString(4),
+                         dr.GetDouble(5),
+                         ItemPedido.ObterListaPorPedidoId(dr.GetInt32(0))
+                );
+                    
+            }dr.Close();
+            cmd.Connection.Close();
             return pedido;
+            
         }
         public static List<Pedido> ObterLista()
         {
             List<Pedido> Pedidos = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select *from pedido ";
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Pedidos.Add(new(
+                    dr.GetInt32(0),
+                    Usuario.ObterPorId(dr.GetInt32(1)),
+                    Cliente.ObterPorId(dr.GetInt32(2)),
+                    dr.GetDateTime(3),
+                    dr.GetString(4),
+                    dr.GetDouble(5),
+                    ItemPedido.ObterListaPorPedidoId(dr.GetInt32(0))
+                 )
+                );  
+            }
             
             return Pedidos;
         }
 
     }
 }
+                    
+                    
+
+

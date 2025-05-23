@@ -50,7 +50,21 @@ namespace ComercialTDSDesk
 
         private void txtCodBar_TextChanged(object sender, EventArgs e)
         {
-            var produto = Produto.ObterPorId(int.Parse(txtCodBar.Text));
+            if (txtCodBar.Text.Length > 6)
+            {
+              var produto = Produto.ObterPorCodBar(txtCodBar.Text);
+                if (produto.Id == 0)
+                {
+                    produto = Produto.ObterPorId(int.Parse(txtCodBar.Text));
+                }
+                txtDescricao.Text = produto.Descricao;
+                txtValorUnit.Text = produto.ValorUnit.ToString("R$ ##.00");
+                label4.Text =  $" R$ {produto.ValorUnit * produto.ClasseDesconto}".ToString(); 
+            }
+            
         }
+      
     }
 }
+                   
+

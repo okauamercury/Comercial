@@ -151,6 +151,33 @@ namespace ComercialTDSClass
             cmd.Connection.Close();
             return produtos;
         }
+        public static Produto ObterPorCodBar(string cod_Barras)
+        {
+            Produto produto = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = $"select * from produtos where cod_barras = '{cod_Barras}'";
+            var dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                produto = new(
+                    dr.GetInt32(0),
+                    dr.GetString(1),
+                    dr.GetString(2),
+                    dr.GetDouble(3),
+                    dr.GetString(4),
+                    Categoria.ObterPorId(dr.GetInt32(5)),
+                    dr.GetDouble(6),
+                    dr.GetDouble(7),
+                    (byte[])dr.GetValue(8),
+                    dr.GetDateTime(9),
+                    dr.GetBoolean(10)
+                );
+
+            }
+            dr.Close();
+            cmd.Connection.Close();
+            return produto;
+        }
     }
 }
 

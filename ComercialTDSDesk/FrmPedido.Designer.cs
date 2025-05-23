@@ -306,6 +306,7 @@
             txtCodBar.Name = "txtCodBar";
             txtCodBar.Size = new Size(110, 23);
             txtCodBar.TabIndex = 0;
+            txtCodBar.TextChanged += txtCodBar_TextChanged;
             // 
             // txtDescricao
             // 

@@ -82,7 +82,7 @@
             dgvListar.AllowUserToDeleteRows = false;
             dgvListar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListar.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnNivel });
-            dgvListar.GridColor = SystemColors.ScrollBar;
+            dgvListar.GridColor = SystemColors.Menu;
             dgvListar.Location = new Point(583, 306);
             dgvListar.Name = "dgvListar";
             dgvListar.ReadOnly = true;

@@ -58,21 +58,25 @@ namespace ComercialTDSClass
         {
             List<Endereco> enderecos = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select *from enderecos order by";
+            cmd.CommandText = $"select * from enderecos where id = {id}";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                Endereco endereco = new();
-                dr.GetInt32(0);
-                dr.GetString(1);
-                dr.GetString(2);
-                dr.GetString(3);
-                dr.GetString(4);
-                dr.GetString(5);
-                dr.GetString(6);
-                dr.GetString(7);
-                dr.GetString(8);
-                dr.GetString(9);
+                enderecos.Add(new(
+                     dr.GetInt32(0),
+                     dr.GetString(1),
+                     dr.GetString(2),
+                     dr.GetString(3),
+                     dr.GetString(4),
+                     dr.GetString(5),
+                     dr.GetString(6),
+                     dr.GetString(7),
+                     dr.GetString(8)
+                     
+                    )
+                    
+                );
+               
             }
             dr.Close();
             cmd.Connection.Close();

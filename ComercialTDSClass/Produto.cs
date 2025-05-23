@@ -21,7 +21,7 @@ namespace ComercialTDSClass
         public Categoria? Categoria { get; set; }
         public double? EstoqueMinimo { get; set; }
         public double? ClasseDesconto { get; set; }
-        public Byte[]? Imagem { get; set; }
+        public byte[]? Imagem { get; set; }
         public DateTime? DataCad { get; set; }
         public bool Descontinuado { get; set; }
 
@@ -61,14 +61,14 @@ namespace ComercialTDSClass
 
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.CommandText = "sp_produto_inserir";
+            cmd.CommandText = "sp_produto_insert";
             cmd.Parameters.AddWithValue("spcod_barras", CodBarras);
             cmd.Parameters.AddWithValue("spdescricao", Descricao);
             cmd.Parameters.AddWithValue("spvalor_unit", ValorUnit);
             cmd.Parameters.AddWithValue("spunidade_venda", UnidadeVenda);
             cmd.Parameters.AddWithValue("spcategoria_id", Categoria.Id);
             cmd.Parameters.AddWithValue("spestoque_minimo", EstoqueMinimo);
-            cmd.Parameters.AddWithValue("spClasseDesconto", ClasseDesconto);
+            cmd.Parameters.AddWithValue("spclasse_desconto", ClasseDesconto);
             cmd.Parameters.AddWithValue("spimagem", Imagem);
             Id = Convert.ToInt32(cmd.ExecuteScalar());
             cmd.Connection.Close();
@@ -101,7 +101,7 @@ namespace ComercialTDSClass
         {
             Produto produto = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select * from produto where id = {id}";
+            cmd.CommandText = $"select * from produtos where id = {id}";
             var dr = cmd.ExecuteReader();
             if (dr.Read())
             {

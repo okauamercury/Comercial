@@ -43,7 +43,14 @@ namespace ComercialTDSDesk
             if (pedido.Id > 0)
             {
                 txtIdPedido.Text = pedido.Id.ToString();
+                grbIndentificacao.Enabled = false;
+                grbItens.Enabled = true;
             }
+        }
+
+        private void txtCodBar_TextChanged(object sender, EventArgs e)
+        {
+            var produto = Produto.ObterPorId(int.Parse(txtCodBar.Text));
         }
     }
 }

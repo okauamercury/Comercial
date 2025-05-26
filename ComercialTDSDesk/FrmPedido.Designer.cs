@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             grbIndentificacao = new GroupBox();
             button1 = new Button();
             btnInserePedido = new Button();
@@ -36,10 +38,12 @@
             txtUsuario = new TextBox();
             label3 = new Label();
             grbItens = new GroupBox();
+            label15 = new Label();
+            txtIdProduto = new TextBox();
             label4 = new Label();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
-            textBox1 = new TextBox();
+            txtSubTotalItens = new TextBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
@@ -152,10 +156,12 @@
             // 
             // grbItens
             // 
+            grbItens.Controls.Add(label15);
+            grbItens.Controls.Add(txtIdProduto);
             grbItens.Controls.Add(label4);
             grbItens.Controls.Add(radioButton2);
             grbItens.Controls.Add(radioButton1);
-            grbItens.Controls.Add(textBox1);
+            grbItens.Controls.Add(txtSubTotalItens);
             grbItens.Controls.Add(label10);
             grbItens.Controls.Add(label9);
             grbItens.Controls.Add(label8);
@@ -176,6 +182,24 @@
             grbItens.TabIndex = 1;
             grbItens.TabStop = false;
             grbItens.Text = "Itens do Pedido";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
+            label15.ForeColor = SystemColors.ControlText;
+            label15.Location = new Point(22, 14);
+            label15.Name = "label15";
+            label15.Size = new Size(64, 15);
+            label15.TabIndex = 4;
+            label15.Text = "ID Produto";
+            // 
+            // txtIdProduto
+            // 
+            txtIdProduto.Location = new Point(92, 11);
+            txtIdProduto.Name = "txtIdProduto";
+            txtIdProduto.Size = new Size(100, 23);
+            txtIdProduto.TabIndex = 4;
             // 
             // label4
             // 
@@ -209,30 +233,33 @@
             radioButton1.Text = "Percentual";
             radioButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtSubTotalItens
             // 
-            textBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = Color.Navy;
-            textBox1.Location = new Point(506, 285);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(122, 33);
-            textBox1.TabIndex = 13;
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            txtSubTotalItens.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtSubTotalItens.ForeColor = Color.Navy;
+            txtSubTotalItens.Location = new Point(506, 285);
+            txtSubTotalItens.Name = "txtSubTotalItens";
+            txtSubTotalItens.ReadOnly = true;
+            txtSubTotalItens.Size = new Size(122, 33);
+            txtSubTotalItens.TabIndex = 13;
+            txtSubTotalItens.TextAlign = HorizontalAlignment.Right;
             // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(430, 289);
+            label10.Location = new Point(340, 288);
             label10.Name = "label10";
-            label10.Size = new Size(81, 25);
+            label10.Size = new Size(160, 25);
             label10.TabIndex = 12;
-            label10.Text = "Total R$";
+            label10.Text = "SubTotal Itens R$";
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = SystemColors.Control;
+            label9.ForeColor = SystemColors.ControlText;
             label9.Location = new Point(463, 10);
             label9.Name = "label9";
             label9.Size = new Size(57, 15);
@@ -242,6 +269,8 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.ForeColor = SystemColors.Desktop;
             label8.Location = new Point(404, 42);
             label8.Name = "label8";
             label8.Size = new Size(43, 15);
@@ -251,6 +280,8 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.ForeColor = SystemColors.ControlText;
             label7.Location = new Point(339, 42);
             label7.Name = "label7";
             label7.Size = new Size(58, 15);
@@ -260,6 +291,8 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.ForeColor = SystemColors.ControlText;
             label6.Location = new Point(138, 42);
             label6.Name = "label6";
             label6.Size = new Size(58, 15);
@@ -269,6 +302,8 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.ForeColor = SystemColors.ControlText;
             label5.Location = new Point(22, 42);
             label5.Name = "label5";
             label5.Size = new Size(97, 15);
@@ -317,23 +352,34 @@
             // 
             // btnAddItem
             // 
+            btnAddItem.BackColor = SystemColors.Desktop;
+            btnAddItem.ForeColor = SystemColors.Control;
             btnAddItem.Location = new Point(539, 42);
             btnAddItem.Name = "btnAddItem";
-            btnAddItem.Size = new Size(75, 42);
+            btnAddItem.Size = new Size(75, 35);
             btnAddItem.TabIndex = 5;
             btnAddItem.Text = "A&dicionar";
-            btnAddItem.UseVisualStyleBackColor = true;
+            btnAddItem.UseVisualStyleBackColor = false;
+            btnAddItem.Click += btnAddItem_Click;
             // 
             // dgvItensPedido
             // 
             dgvItensPedido.AllowUserToAddRows = false;
             dgvItensPedido.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ActiveCaptionText;
+            dgvItensPedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgvItensPedido.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvItensPedido.Columns.AddRange(new DataGridViewColumn[] { clnSeq, clnCodBar, clnDescricao, clnValorUnit, clnQuantidade, clnDescontoItem, clnTotalItem });
             dgvItensPedido.Location = new Point(6, 105);
             dgvItensPedido.Name = "dgvItensPedido";
             dgvItensPedido.ReadOnly = true;
             dgvItensPedido.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.ControlText;
+            dgvItensPedido.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgvItensPedido.Size = new Size(620, 173);
             dgvItensPedido.TabIndex = 0;
             // 
@@ -423,6 +469,8 @@
             txtIdPedido.Name = "txtIdPedido";
             txtIdPedido.Size = new Size(181, 43);
             txtIdPedido.TabIndex = 4;
+            txtIdPedido.TextChanged += txtIdPedido_TextChanged;
+            txtIdPedido.KeyDown += txtIdPedido_KeyDown;
             // 
             // txtTotal
             // 
@@ -463,6 +511,7 @@
             btnFechar.TabIndex = 3;
             btnFechar.Text = "&Fechar";
             btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
             // 
             // txtDescontoPedido
             // 
@@ -472,6 +521,7 @@
             txtDescontoPedido.TabIndex = 8;
             txtDescontoPedido.Text = "0,00";
             txtDescontoPedido.TextAlign = HorizontalAlignment.Right;
+            txtDescontoPedido.KeyDown += txtDescontoPedido_KeyDown;
             // 
             // label11
             // 
@@ -564,7 +614,7 @@
         private Label label5;
         private TextBox txtDescontoItem;
         private TextBox txtQuantidade;
-        private TextBox textBox1;
+        private TextBox txtSubTotalItens;
         private Label label10;
         private TextBox txtTotal;
         private TextBox txtSubTotal;
@@ -586,5 +636,7 @@
         private RadioButton radioButton1;
         private Button button1;
         private Label label4;
+        private TextBox txtIdProduto;
+        private Label label15;
     }
 }

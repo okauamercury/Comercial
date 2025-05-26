@@ -118,5 +118,10 @@ namespace ComercialTDSDesk
             frmPedido.Show();
             AssiociaPanel(new FrmPedido());
         }
+
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

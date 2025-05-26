@@ -67,8 +67,8 @@ namespace ComercialTDSClass
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.CommandText = "sp_itempedido_insert";
-            cmd.Parameters.AddWithValue("sppedidoid",PedidoID);
-            cmd.Parameters.AddWithValue("spproduto",Produto);
+            cmd.Parameters.AddWithValue("sppedido_id", PedidoID);
+            cmd.Parameters.AddWithValue("spproduto_id", Produto.Id);
             cmd.Parameters.AddWithValue("spquantidade",Quantidade);
             cmd.Parameters.AddWithValue("spdesconto", Desconto);
             Id = Convert.ToInt32(cmd.ExecuteScalar());
@@ -80,9 +80,9 @@ namespace ComercialTDSClass
             
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.CommandText = "sp_itempedido_insert";
+            cmd.CommandText = "sp_itempedido_update";
             cmd.Parameters.AddWithValue("sppedidoid", PedidoID);
-            cmd.Parameters.AddWithValue("spproduto", Produto);
+            cmd.Parameters.AddWithValue("spproduto_id", Produto.Id);
             cmd.Parameters.AddWithValue("spquantidade", Quantidade);
             bool atualizado = cmd.ExecuteNonQuery() > 0 ? true : false;
             cmd.Parameters.AddWithValue("spdesconto", Desconto);
@@ -116,7 +116,7 @@ namespace ComercialTDSClass
 
             List<ItemPedido> Items = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select *from itempedidos where pedido_id = {pedidoId}";
+            cmd.CommandText = $"select *from itempedido where pedido_id = {pedidoId}";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {

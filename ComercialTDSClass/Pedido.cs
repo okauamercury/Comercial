@@ -14,6 +14,7 @@ namespace ComercialTDSClass
         public DateTime Data { get; set; }
         public string? Status { get; set; }
         public double Desconto { get; set; }
+        public double Quantidade { get; set; }
         public List<ItemPedido> Items { get; set; }
        
         public Pedido() { }
@@ -24,7 +25,7 @@ namespace ComercialTDSClass
             Usuario = usuario;
             Cliente = cliente;
         }
-        public Pedido(int id, Usuario usuario, Cliente cliente, DateTime data, string status, double desconto)
+        public Pedido(int id, Usuario usuario, Cliente cliente, DateTime data, string status, double desconto, double quantidade)
         {
             Id = id;
             Usuario = usuario;
@@ -32,6 +33,7 @@ namespace ComercialTDSClass
             Data = data;
             Status = status;
             Desconto = desconto;
+            Quantidade = quantidade;
         }
         public Pedido(int id, string status, double desconto)
         {
@@ -81,7 +83,7 @@ namespace ComercialTDSClass
         {
             Pedido pedido = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select *from pedido where id {id}";
+            cmd.CommandText = $"select * from pedido where id {id}";
             var dr = cmd.ExecuteReader();
             while(dr.Read())
             {

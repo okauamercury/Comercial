@@ -167,10 +167,16 @@ namespace ComercialTDSDesk
             if (pedido.Atualizar())
             {
                 MessageBox.Show($"Pedido {pedido.Id} foi fechado com sucesso!\n");
-                Controls.Clear();
-               
+                dgvItensPedido.Rows.Clear();
+                txtIdPedido.Clear();
+                txtIdPedido.Focus();
+                txtCodBar.Clear();
+                txtDescontoPedido.Clear();
+                txtIdCliente.Clear();
+                
             }
         }
+        
         
     }
 }

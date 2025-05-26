@@ -58,8 +58,9 @@ namespace ComercialTDSDesk
                     produto = Produto.ObterPorId(int.Parse(txtCodBar.Text));
                 }
                 txtDescricao.Text = produto.Descricao;
-                txtValorUnit.Text = produto.ValorUnit.ToString();
+                txtValorUnit.Text = produto.ValorUnit.ToString("R$ ##.00");
                 label4.Text =  $" R$ {produto.ValorUnit * produto.ClasseDesconto}".ToString(); 
+
             }
             
         }

@@ -97,10 +97,10 @@ namespace ComercialTDSDesk
 
         private void listarToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            FrmListar frmListar = new();
+            FrmListarUsuarios frmListar = new();
             frmListar.MdiParent = this;
             frmListar.Show();
-            AssiociaPanel(new FrmListar());
+            AssiociaPanel(new FrmListarUsuarios());
         }
 
         private void listarToolStripMenuItem6_Click(object sender, EventArgs e)
@@ -122,6 +122,19 @@ namespace ComercialTDSDesk
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCliente frmcliente = new();
+            frmcliente.MdiParent = this;
+            frmcliente.Show();
+            AssiociaPanel(new FrmCliente());
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -23,7 +23,7 @@ namespace ComercialTDSClass
      public List<Endereco>? Enderecos { get; set; }
         
         public Cliente() { }
-        public Cliente( int id, string? nome, string? cpf, string? telefone, string? email, DateTime data_Nasci, DateTime data_cadastro, bool? ativo, List<Endereco> enderecos)
+        public Cliente( int id, string? nome, string cpf, string telefone, string? email, DateTime data_Nasci, DateTime data_cadastro, bool? ativo, List<Endereco> enderecos)
         {
             Id = id;
             Nome = nome;
@@ -36,7 +36,7 @@ namespace ComercialTDSClass
             Enderecos = enderecos;
           
         }
-        public Cliente(int id, string? nome, string? cpf, string? telefone, string? email, DateTime data_Nasci, DateTime data_cadastro, bool? ativo)
+        public Cliente(int id, string? nome, string cpf, string telefone, string? email, DateTime data_Nasci, DateTime data_cadastro, bool? ativo)
         {
 
             Id = Id;
@@ -48,6 +48,18 @@ namespace ComercialTDSClass
             Data_cadastro = data_cadastro;
             Ativo = ativo;
         }
+        public Cliente(string? nome, string cpf, string telefone, string? email, DateTime data_Nasci)
+        {
+            Nome = nome;
+            Cpf = cpf;
+            Telefone = telefone;
+            Email = email;
+            Data_Nasci = data_Nasci;
+            
+            
+        }
+
+     
         public void Insert()
         {
             var cmd = Banco.Abrir();
@@ -72,6 +84,7 @@ namespace ComercialTDSClass
             cmd.Parameters.AddWithValue("spcpf", Cpf);
             cmd.Parameters.AddWithValue("sptelefone", Telefone);
             cmd.Parameters.AddWithValue("spemail", Email);
+
            
             return cmd.ExecuteNonQuery()>0? true:false;
         }

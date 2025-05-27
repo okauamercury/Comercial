@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace ComercialTDSDesk
 {
-    public partial class FrmListar : Form
+    public partial class FrmListarUsuarios : Form
     {
-        public FrmListar()
+        public FrmListarUsuarios()
         {
             InitializeComponent();
         }
@@ -56,7 +56,7 @@ namespace ComercialTDSDesk
         }
         private void CarregarGrid()
         {
-            FrmListar frmListar = new();
+            FrmListarUsuarios frmListar = new();
             var lista = Usuario.ObterLista();
             int linha = 0;
             dgvListar.Rows.Clear();

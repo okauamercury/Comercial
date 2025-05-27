@@ -1,6 +1,6 @@
 ﻿namespace ComercialTDSDesk
 {
-    partial class FrmListar
+    partial class FrmListarUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@
             // 
             btnBuscar.BackColor = Color.Black;
             btnBuscar.ForeColor = SystemColors.ButtonShadow;
-            btnBuscar.Location = new Point(282, 437);
+            btnBuscar.Location = new Point(279, 355);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             btnCancelar.BackColor = Color.Black;
             btnCancelar.ForeColor = SystemColors.ButtonShadow;
-            btnCancelar.Location = new Point(416, 437);
+            btnCancelar.Location = new Point(413, 355);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(267, 329);
+            txtNome.Location = new Point(264, 247);
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Nome";
             txtNome.Size = new Size(248, 23);
@@ -79,7 +79,7 @@
             // 
             cbmNivel.FormattingEnabled = true;
             cbmNivel.Items.AddRange(new object[] { "Master", "Administrador", "Estoquista", "Caixa" });
-            cbmNivel.Location = new Point(267, 378);
+            cbmNivel.Location = new Point(264, 296);
             cbmNivel.Name = "cbmNivel";
             cbmNivel.Size = new Size(248, 23);
             cbmNivel.TabIndex = 5;
@@ -112,7 +112,7 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvListar.DefaultCellStyle = dataGridViewCellStyle3;
-            dgvListar.Location = new Point(583, 306);
+            dgvListar.Location = new Point(580, 224);
             dgvListar.Name = "dgvListar";
             dgvListar.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -156,7 +156,7 @@
             label1.TabIndex = 7;
             label1.Text = "Listagem de Usuarios";
             // 
-            // FrmListar
+            // FrmListarUsuarios
             // 
             AcceptButton = btnBuscar;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -169,7 +169,7 @@
             Controls.Add(txtNome);
             Controls.Add(btnCancelar);
             Controls.Add(btnBuscar);
-            Name = "FrmListar";
+            Name = "FrmListarUsuarios";
             Text = "FrmListar";
             Load += FrmListar_Load;
             ((System.ComponentModel.ISupportInitialize)dgvListar).EndInit();

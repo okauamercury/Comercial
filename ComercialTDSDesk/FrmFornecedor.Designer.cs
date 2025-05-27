@@ -33,6 +33,8 @@
             txtNome = new TextBox();
             txtCNPJ = new TextBox();
             textBox1 = new TextBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -76,11 +78,20 @@
             textBox1.Size = new Size(138, 23);
             textBox1.TabIndex = 4;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(366, 103);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(240, 150);
+            dataGridView1.TabIndex = 5;
+            // 
             // FrmFornecedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(textBox1);
             Controls.Add(txtCNPJ);
             Controls.Add(txtNome);
@@ -88,6 +99,7 @@
             Controls.Add(button1);
             Name = "FrmFornecedor";
             Text = "FrmFornecedor";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -99,5 +111,6 @@
         private TextBox txtNome;
         private TextBox txtCNPJ;
         private TextBox textBox1;
+        private DataGridView dataGridView1;
     }
 }

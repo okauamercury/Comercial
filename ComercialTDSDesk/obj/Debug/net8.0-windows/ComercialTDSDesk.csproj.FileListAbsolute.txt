@@ -46,3 +46,5 @@ C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmProdutoListar.resources
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmEstoque.resources
 C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmFornecedor.resources
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmCliente.resources
+C:\Users\kaua.pmcrocha\source\repos\ComercialTDS\ComercialTDSDesk\obj\Debug\net8.0-windows\ComercialTDSDesk.FrmListarCliente.resources

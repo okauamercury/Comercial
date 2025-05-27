@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             btnBuscar = new Button();
             btnCancelar = new Button();
             txtNome = new TextBox();
@@ -41,22 +45,26 @@
             // 
             // btnBuscar
             // 
+            btnBuscar.BackColor = Color.Black;
+            btnBuscar.ForeColor = SystemColors.ButtonShadow;
             btnBuscar.Location = new Point(282, 437);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 0;
             btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = Color.Black;
+            btnCancelar.ForeColor = SystemColors.ButtonShadow;
             btnCancelar.Location = new Point(416, 437);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // txtNome
@@ -80,12 +88,41 @@
             // 
             dgvListar.AllowUserToAddRows = false;
             dgvListar.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dgvListar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvListar.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvListar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvListar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListar.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnNivel });
-            dgvListar.GridColor = SystemColors.Menu;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvListar.DefaultCellStyle = dataGridViewCellStyle3;
             dgvListar.Location = new Point(583, 306);
             dgvListar.Name = "dgvListar";
             dgvListar.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionForeColor = Color.White;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvListar.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvListar.RowHeadersVisible = false;
             dgvListar.Size = new Size(272, 185);
             dgvListar.TabIndex = 6;
@@ -110,7 +147,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Millimeter);
+            label1.ForeColor = SystemColors.Desktop;
             label1.Location = new Point(12, 31);
             label1.Name = "label1";
             label1.Size = new Size(377, 51);

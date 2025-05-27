@@ -83,7 +83,7 @@ namespace ComercialTDSClass
         {
             Pedido pedido = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = $"select * from pedido where id {id}";
+            cmd.CommandText = $"select * from pedidos where id {id}";
             var dr = cmd.ExecuteReader();
             while(dr.Read())
             {
@@ -97,7 +97,8 @@ namespace ComercialTDSClass
                          ItemPedido.ObterListaPorPedidoId(dr.GetInt32(0))
                 );
                     
-            }dr.Close();
+            }
+            dr.Close();
             cmd.Connection.Close();
             return pedido;
             

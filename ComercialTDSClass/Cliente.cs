@@ -21,8 +21,16 @@ namespace ComercialTDSClass
      public DateTime Data_cadastro { get; set; }
      public bool? Ativo { get; set; }
      public List<Endereco>? Enderecos { get; set; }
-        
-        public Cliente() { }
+     public string? Cep { get; set; }
+
+
+
+        public Cliente() 
+        {
+            Cep = Cep;
+        }
+
+
         public Cliente( int id, string? nome, string cpf, string telefone, string? email, DateTime data_Nasci, DateTime data_cadastro, bool? ativo, List<Endereco> enderecos)
         {
             Id = id;

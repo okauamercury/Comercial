@@ -101,6 +101,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(542, 525);
             panel1.TabIndex = 6;
+            panel1.Paint += panel1_Paint;
             // 
             // label2
             // 
@@ -119,6 +120,7 @@
             cmbNivel.Name = "cmbNivel";
             cmbNivel.Size = new Size(167, 23);
             cmbNivel.TabIndex = 6;
+            cmbNivel.SelectedIndexChanged += cmbNivel_SelectedIndexChanged;
             // 
             // label1
             // 

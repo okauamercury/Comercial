@@ -103,14 +103,14 @@
             // novoToolStripMenuItem
             // 
             novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            novoToolStripMenuItem.Size = new Size(180, 22);
+            novoToolStripMenuItem.Size = new Size(103, 22);
             novoToolStripMenuItem.Text = "&Novo";
             novoToolStripMenuItem.Click += novoToolStripMenuItem_Click;
             // 
             // listarToolStripMenuItem1
             // 
             listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            listarToolStripMenuItem1.Size = new Size(180, 22);
+            listarToolStripMenuItem1.Size = new Size(103, 22);
             listarToolStripMenuItem1.Text = "&Listar";
             listarToolStripMenuItem1.Click += listarToolStripMenuItem1_Click;
             // 
@@ -176,13 +176,14 @@
             // incluirToolStripMenuItem4
             // 
             incluirToolStripMenuItem4.Name = "incluirToolStripMenuItem4";
-            incluirToolStripMenuItem4.Size = new Size(107, 22);
+            incluirToolStripMenuItem4.Size = new Size(180, 22);
             incluirToolStripMenuItem4.Text = "&Incluir";
+            incluirToolStripMenuItem4.Click += incluirToolStripMenuItem4_Click;
             // 
             // listarToolStripMenuItem4
             // 
             listarToolStripMenuItem4.Name = "listarToolStripMenuItem4";
-            listarToolStripMenuItem4.Size = new Size(107, 22);
+            listarToolStripMenuItem4.Size = new Size(180, 22);
             listarToolStripMenuItem4.Text = "&Listar";
             // 
             // usuariosToolStripMenuItem

@@ -14,40 +14,49 @@ namespace ComercialTDSClass
     {
         public int Id { get; set; }
         public string? RazaoSocial { get; set; }
-        public string? Fantasia { get; set; }
+        public string?Fantasia { get; set; }
         public string? Cnpj { get; set; }
-        public string Contato { get; set; }
-        public string Telefone { get; set; }
+        public string? Contato { get; set; }
+        public string? Telefone { get; set; }
         public string? Email { get; set; }
 
 
         public Fornecedor() { }
-        public Fornecedor(int id, string? razaoSocial, string? fantasia, string cnpj)
+        public Fornecedor(int id, string razaosocial, string fantasia, string cnpj)
         {
             Id = id;
-            RazaoSocial = razaoSocial;
+            RazaoSocial = razaosocial;
             Fantasia = fantasia;
             Cnpj = cnpj;
         }
-        public Fornecedor(string? razaoSocial, string? fantasia, string cnpj)
+        public Fornecedor(string? razaosocial, string fantasia, string cnpj)
         {
             
-            RazaoSocial = razaoSocial;
+            RazaoSocial = razaosocial;
             Fantasia = fantasia;
             Cnpj = cnpj;
         }
 
-        public Fornecedor(int id, string? razaoSocial, string? fantasia, string cnpj, string contato, string telefone, string email)
+        public Fornecedor(int id, string razaosocial, string fantasia, string cnpj, string contato, string telefone, string email)
         {
             Id = id;
-            RazaoSocial = razaoSocial;
+            RazaoSocial = razaosocial;
             Fantasia = fantasia;
             Cnpj = cnpj;
             Contato = contato;
             Telefone = telefone;
             Email = email;
         }
-
+        public Fornecedor(string razaosocial, string fantasia, string cnpj, string contato, string telefone, string email)
+        {
+            
+            RazaoSocial = razaosocial;
+            Fantasia = fantasia;
+            Cnpj = cnpj;
+            Contato = contato;
+            Telefone = telefone;
+            Email = email;
+        }
         public void Inserir()
         {
             var cmd = Banco.Abrir();

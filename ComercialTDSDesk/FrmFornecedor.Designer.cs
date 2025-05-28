@@ -28,89 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            txtNome = new TextBox();
+            btnSalvar = new Button();
+            btnEditar = new Button();
             txtCNPJ = new TextBox();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            txtRazaoSocial = new TextBox();
+            txtFantasia = new TextBox();
+            dgvFornecedor = new DataGridView();
+            txtTel = new TextBox();
+            txtEmail = new TextBox();
+            btnExcluir = new Button();
+            clnID = new DataGridViewTextBoxColumn();
+            clnRazaoSocial = new DataGridViewTextBoxColumn();
+            clnCnpj = new DataGridViewTextBoxColumn();
+            clnNomeFantasia = new DataGridViewTextBoxColumn();
+            clnTelefone = new DataGridViewTextBoxColumn();
+            clnEmail = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dgvFornecedor).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnSalvar
             // 
-            button1.Location = new Point(88, 230);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnSalvar.Location = new Point(96, 234);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(73, 23);
+            btnSalvar.TabIndex = 0;
+            btnSalvar.Text = "Gravar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
-            // button2
+            // btnEditar
             // 
-            button2.Location = new Point(195, 230);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // txtNome
-            // 
-            txtNome.Location = new Point(88, 118);
-            txtNome.Name = "txtNome";
-            txtNome.PlaceholderText = "Nome";
-            txtNome.Size = new Size(138, 23);
-            txtNome.TabIndex = 2;
+            btnEditar.Location = new Point(163, 234);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(73, 23);
+            btnEditar.TabIndex = 1;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
             // 
             // txtCNPJ
             // 
-            txtCNPJ.Location = new Point(88, 156);
+            txtCNPJ.Location = new Point(96, 119);
             txtCNPJ.Name = "txtCNPJ";
             txtCNPJ.PlaceholderText = "CNPJ";
             txtCNPJ.Size = new Size(138, 23);
             txtCNPJ.TabIndex = 3;
             // 
-            // textBox1
+            // txtRazaoSocial
             // 
-            textBox1.Location = new Point(88, 185);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(138, 23);
-            textBox1.TabIndex = 4;
+            txtRazaoSocial.Location = new Point(96, 84);
+            txtRazaoSocial.Name = "txtRazaoSocial";
+            txtRazaoSocial.PlaceholderText = "Razão Social";
+            txtRazaoSocial.Size = new Size(138, 23);
+            txtRazaoSocial.TabIndex = 4;
             // 
-            // dataGridView1
+            // txtFantasia
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(366, 103);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 150);
-            dataGridView1.TabIndex = 5;
+            txtFantasia.Location = new Point(96, 148);
+            txtFantasia.Name = "txtFantasia";
+            txtFantasia.PlaceholderText = "Nome Fantasia";
+            txtFantasia.Size = new Size(138, 23);
+            txtFantasia.TabIndex = 5;
+            // 
+            // dgvFornecedor
+            // 
+            dgvFornecedor.AllowUserToAddRows = false;
+            dgvFornecedor.AllowUserToDeleteRows = false;
+            dgvFornecedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvFornecedor.Columns.AddRange(new DataGridViewColumn[] { clnID, clnRazaoSocial, clnCnpj, clnNomeFantasia, clnTelefone, clnEmail });
+            dgvFornecedor.Location = new Point(270, 82);
+            dgvFornecedor.Name = "dgvFornecedor";
+            dgvFornecedor.ReadOnly = true;
+            dgvFornecedor.RowHeadersVisible = false;
+            dgvFornecedor.Size = new Size(554, 237);
+            dgvFornecedor.TabIndex = 7;
+            dgvFornecedor.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // txtTel
+            // 
+            txtTel.Location = new Point(96, 176);
+            txtTel.Name = "txtTel";
+            txtTel.PlaceholderText = "Telefone";
+            txtTel.Size = new Size(138, 23);
+            txtTel.TabIndex = 8;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(96, 205);
+            txtEmail.Name = "txtEmail";
+            txtEmail.PlaceholderText = "Email";
+            txtEmail.Size = new Size(138, 23);
+            txtEmail.TabIndex = 9;
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Location = new Point(96, 262);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(73, 23);
+            btnExcluir.TabIndex = 10;
+            btnExcluir.Text = "Excluir";
+            btnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // clnID
+            // 
+            clnID.HeaderText = "ID";
+            clnID.Name = "clnID";
+            clnID.ReadOnly = true;
+            clnID.Width = 50;
+            // 
+            // clnRazaoSocial
+            // 
+            clnRazaoSocial.HeaderText = "Razão Social";
+            clnRazaoSocial.Name = "clnRazaoSocial";
+            clnRazaoSocial.ReadOnly = true;
+            // 
+            // clnCnpj
+            // 
+            clnCnpj.HeaderText = "Cnpj";
+            clnCnpj.Name = "clnCnpj";
+            clnCnpj.ReadOnly = true;
+            // 
+            // clnNomeFantasia
+            // 
+            clnNomeFantasia.HeaderText = "Nome Fantasia";
+            clnNomeFantasia.Name = "clnNomeFantasia";
+            clnNomeFantasia.ReadOnly = true;
+            // 
+            // clnTelefone
+            // 
+            clnTelefone.HeaderText = "Telefone";
+            clnTelefone.Name = "clnTelefone";
+            clnTelefone.ReadOnly = true;
+            // 
+            // clnEmail
+            // 
+            clnEmail.HeaderText = "Email";
+            clnEmail.Name = "clnEmail";
+            clnEmail.ReadOnly = true;
             // 
             // FrmFornecedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
+            ClientSize = new Size(902, 450);
+            Controls.Add(btnExcluir);
+            Controls.Add(txtEmail);
+            Controls.Add(txtTel);
+            Controls.Add(dgvFornecedor);
+            Controls.Add(txtFantasia);
+            Controls.Add(txtRazaoSocial);
             Controls.Add(txtCNPJ);
-            Controls.Add(txtNome);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnEditar);
+            Controls.Add(btnSalvar);
             Name = "FrmFornecedor";
             Text = "FrmFornecedor";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            WindowState = FormWindowState.Maximized;
+            Load += FrmFornecedor_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvFornecedor).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private TextBox txtNome;
+        private Button btnSalvar;
+        private Button btnEditar;
         private TextBox txtCNPJ;
-        private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private TextBox txtRazaoSocial;
+        private TextBox txtFantasia;
+        private DataGridView dgvFornecedor;
+        private TextBox txtTel;
+        private TextBox txtEmail;
+        private Button btnExcluir;
+        private DataGridViewTextBoxColumn clnID;
+        private DataGridViewTextBoxColumn clnRazaoSocial;
+        private DataGridViewTextBoxColumn clnCnpj;
+        private DataGridViewTextBoxColumn clnNomeFantasia;
+        private DataGridViewTextBoxColumn clnTelefone;
+        private DataGridViewTextBoxColumn clnEmail;
     }
 }

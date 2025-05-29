@@ -63,6 +63,36 @@ namespace ComercialTDSDesk.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile_icon_design_free_vector {
+            get {
+                object obj = ResourceManager.GetObject("profile-icon-design-free-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_icon_design_free_vector1 {
+            get {
+                object obj = ResourceManager.GetObject("profile-icon-design-free-vector1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_icon_design_free_vector2 {
+            get {
+                object obj = ResourceManager.GetObject("profile-icon-design-free-vector2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sem_imagem {
             get {
                 object obj = ResourceManager.GetObject("sem imagem", resourceCulture);

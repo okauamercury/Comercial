@@ -57,6 +57,16 @@ namespace ComercialTDSClass
             Telefone = telefone;
             Email = email;
         }
+        public Fornecedor(string razaosocial, string fantasia, string cnpj,string telefone, string email)
+        {
+
+            RazaoSocial = razaosocial;
+            Fantasia = fantasia;
+            Cnpj = cnpj;
+            Telefone = telefone;
+            Email = email;
+            
+        }
         public void Inserir()
         {
             var cmd = Banco.Abrir();
@@ -108,27 +118,25 @@ namespace ComercialTDSClass
             dr.Close();
             cmd.Connection.Close();
             return fornecedor;
-           
-           
-
-           
         }
-        public static List<Fornecedor> ObterPorLista(int limit)
+        public static List<Fornecedor> ObterLista(int limit)
         {
             List<Fornecedor> fornecedor = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select *from fornecedores order by";
+            cmd.CommandText = "select *from fornecedores";
             var dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                fornecedor = new();
+                Fornecedor fornecedor1 = new();
+
                 dr.GetInt32(0);
                 dr.GetString(1);
                 dr.GetString(2);
                 dr.GetString(3);
-                Fornecedor.ObterPorLista(dr.GetInt32(4));
+                Fornecedor.ObterLista(dr.GetInt32(4));
                 dr.GetBoolean(5);
-
+                
+              
             }
             dr.Close();
             cmd.Connection.Close();
@@ -136,15 +144,10 @@ namespace ComercialTDSClass
             return fornecedor;
         }
 
-           
-        
-                 
-                
-                    
-              
-      
-          
-
+        public static IEnumerable<Fornecedor?> ObterLista()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

@@ -58,10 +58,7 @@ namespace ComercialTDSDesk
 
         }
 
-        private void maskCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
+       
 
         private void tabEnderecos_Click(object sender, EventArgs e)
         {

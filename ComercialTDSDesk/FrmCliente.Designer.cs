@@ -128,7 +128,7 @@
             maskCpf.Name = "maskCpf";
             maskCpf.Size = new Size(100, 23);
             maskCpf.TabIndex = 13;
-            maskCpf.MaskInputRejected += maskCpf_MaskInputRejected;
+         
             // 
             // tabControl1
             // 

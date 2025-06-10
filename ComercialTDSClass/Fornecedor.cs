@@ -95,6 +95,7 @@ namespace ComercialTDSClass
             cmd.Parameters.AddWithValue("spemail", Email);
 
             cmd.Connection.Close();
+            
 
         }
         public static Fornecedor ObterPorId(int id)
@@ -113,6 +114,7 @@ namespace ComercialTDSClass
                 dr.GetString(3);
                 Fornecedor.ObterPorId(dr.GetInt32(4));
                 dr.GetBoolean(5);
+
                  
             }
             dr.Close();
@@ -121,35 +123,35 @@ namespace ComercialTDSClass
         }
         public static List<Fornecedor> ObterLista(int limit)
         {
-            List<Fornecedor> fornecedor = new();
+            List<Fornecedor> fornecedores = new();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select *from fornecedores";
+            cmd.CommandText = "select * from fornecedores order by nome";
             var dr = cmd.ExecuteReader();
-            if (dr.Read())
+            while (dr.Read())
             {
-                Fornecedor fornecedor1 = new();
+                fornecedores.Add(new(
 
-                dr.GetInt32(0);
-                dr.GetString(1);
-                dr.GetString(2);
-                dr.GetString(3);
-                Fornecedor.ObterLista(dr.GetInt32(4));
-                dr.GetBoolean(5);
-                
-              
+                    dr.GetInt32(0),
+                    dr.GetString(1),
+                    dr.GetString(2),
+                    dr.GetString(3),
+                    Fornecedor.ObterLista(dr.GetInt32(4)),
+                    dr.GetBoolean(5)),
+                    dr.GetString(6)
+                  
+                );
             }
             dr.Close();
             cmd.Connection.Close();
 
-            return fornecedor;
+            return fornecedores;
         }
 
-        public static IEnumerable<Fornecedor?> ObterLista()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
+                
+              
 
                 
                     

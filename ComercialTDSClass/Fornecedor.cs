@@ -116,10 +116,6 @@ namespace ComercialTDSClass
                 dr.GetString(4);
                 dr.GetString(5);
                 dr.GetString(6);
-                //Fornecedor.ObterPorId(dr.GetInt32(4));
-                //dr.GetBoolean(5);
-
-                 
             }
             dr.Close();
             cmd.Connection.Close();
@@ -141,7 +137,6 @@ namespace ComercialTDSClass
                     dr.GetString(4),
                     dr.GetString(5),
                     dr.GetString(6)
-                   
                   )
                 );
             }
@@ -150,10 +145,14 @@ namespace ComercialTDSClass
 
             return fornecedores;
         }
+                   
 
        
     }
 }
+               
+
+                 
                 
               
 

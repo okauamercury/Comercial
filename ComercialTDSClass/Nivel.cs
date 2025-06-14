@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Asn1.Mozilla;
+using Org.BouncyCastle.Asn1.Mozilla;
 using Org.BouncyCastle.Bcpg;
 using System;
 using System.Collections.Generic;
@@ -99,20 +99,16 @@ namespace ComercialTDSClass
            ///já possuem valores atribuidos
            ///
           
-            bool Atualizado = false;
+            
             if (Id < 1) return Atualizado;
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "sp_nivel_update";
             cmd.Parameters.AddWithValue("spnome", Nome);
             cmd.Parameters.AddWithValue("spsigla", Sigla);
+            bool atualizado = cmd.ExecuteNonQuery()>0? true:false;
 
-            if (cmd.ExecuteNonQuery() > 0)
-            {
-               
-               Atualizado = true;
-                
-            }
+            
             cmd.Connection.Close();
             return Atualizado;
             

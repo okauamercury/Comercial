@@ -1633,11 +1633,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kaua.pmcrocha\\source\\repos\\ComercialTDS\\ComercialTDSDesk\\ComercialTDSDesk.csproj",
+      "projectUniqueName": "C:\\Users\\kaua.pmcrocha\\source\\repos\\okauamercury\\Comercial\\ComercialTDSDesk\\ComercialTDSDesk.csproj",
       "projectName": "ComercialTDSDesk",
-      "projectPath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\ComercialTDS\\ComercialTDSDesk\\ComercialTDSDesk.csproj",
+      "projectPath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\okauamercury\\Comercial\\ComercialTDSDesk\\ComercialTDSDesk.csproj",
       "packagesPath": "C:\\Users\\kaua.pmcrocha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\ComercialTDS\\ComercialTDSDesk\\obj\\",
+      "outputPath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\okauamercury\\Comercial\\ComercialTDSDesk\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1658,8 +1658,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\kaua.pmcrocha\\source\\repos\\ComercialTDS\\ComercialTDSClass\\ComercialTDSClass.csproj": {
-              "projectPath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\ComercialTDS\\ComercialTDSClass\\ComercialTDSClass.csproj"
+            "C:\\Users\\kaua.pmcrocha\\source\\repos\\okauamercury\\Comercial\\ComercialTDSClass\\ComercialTDSClass.csproj": {
+              "projectPath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\okauamercury\\Comercial\\ComercialTDSClass\\ComercialTDSClass.csproj"
             }
           }
         }

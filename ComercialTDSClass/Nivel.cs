@@ -12,7 +12,7 @@ using System.Reflection.Metadata.Ecma335;
 namespace ComercialTDSClass
 {
     public class Nivel
-comentario qualquer
+
     {
         // propriedades
         public int Id { get; set; }
@@ -101,7 +101,7 @@ comentario qualquer
            ///
           
             
-            if (Id < 1) return Atualizado;
+
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "sp_nivel_update";
@@ -111,7 +111,7 @@ comentario qualquer
 
             
             cmd.Connection.Close();
-            return Atualizado;
+            return atualizado;
             
             
         }

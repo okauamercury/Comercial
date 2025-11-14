@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ShlvwBhm0w=",
+  "dgSpecHash": "mIdg73t1avI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\ComercialTDS\\ComercialTDSClass\\ComercialTDSClass.csproj",
+  "projectFilePath": "C:\\Users\\kaua.pmcrocha\\source\\repos\\okauamercury\\Comercial\\ComercialTDSClass\\ComercialTDSClass.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kaua.pmcrocha\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\kaua.pmcrocha\\.nuget\\packages\\google.protobuf\\3.30.0\\google.protobuf.3.30.0.nupkg.sha512",
